@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: thunai-backend
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=production
+      - PORT=4000
+      - MONGODB_URI=${MONGODB_URI:-mongodb://mongo:27017/thunai}
+      - TWILIO_ACCOUNT_SID=${TWILIO_ACCOUNT_SID:-}
+      - TWILIO_AUTH_TOKEN=${TWILIO_AUTH_TOKEN:-}
+      - TWILIO_FROM_NUMBER=${TWILIO_FROM_NUMBER:-}
+      - BHASHINI_API_KEY=${BHASHINI_API_KEY:-}
+      - BHASHINI_USER_ID=${BHASHINI_USER_ID:-}
+      - DASHBOARD_ORIGIN=${DASHBOARD_ORIGIN:-http://localhost:3000}
+    depends_on:
+      - mongo
+    restart: unless-stopped
+
+  dashboard:
+    build: ./dashboard
+    container_name: thunai-dashboard
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  mongo:
+    image: mongo:7
+    container_name: thunai-mongo
+    volumes:
+      - mongo_data:/data/db
+    ports:
+      - "27017:27017"
+    restart: unless-stopped
+
+volumes:
+  mongo_data:

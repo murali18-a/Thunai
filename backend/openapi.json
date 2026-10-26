@@ -1,0 +1,163 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Thunai API",
+    "description": "Tamil voice-first scheme & entitlement navigator for rural Tamil Nadu. Zero-LLM, deterministic JsonLogic rule engine.",
+    "version": "2.0.0",
+    "contact": { "name": "Team Thunai", "url": "https://github.com/thunai" },
+    "license": { "name": "MIT" }
+  },
+  "servers": [
+    { "url": "http://localhost:4000", "description": "Local dev" },
+    { "url": "https://thunai.onrender.com", "description": "Production" }
+  ],
+  "tags": [
+    { "name": "Schemes", "description": "Browse and search the welfare scheme KB" },
+    { "name": "Match", "description": "Rule-based eligibility matching" },
+    { "name": "Application", "description": "Draft & SMS services" },
+    { "name": "Offices", "description": "Service centre locator" },
+    { "name": "Analytics", "description": "Dashboard & public stats" },
+    { "name": "Telephony", "description": "IVR & WhatsApp webhooks" }
+  ],
+  "paths": {
+    "/api/health": {
+      "get": {
+        "tags": ["Analytics"],
+        "summary": "Health check",
+        "responses": { "200": { "description": "OK", "content": { "application/json": { "schema": { "type": "object", "properties": { "ok": { "type": "boolean" }, "uptime": { "type": "number" }, "schemes": { "type": "integer" } } } } } } }
+      }
+    },
+    "/api/schemes": {
+      "get": {
+        "tags": ["Schemes"],
+        "summary": "List all active schemes",
+        "parameters": [
+          { "name": "q", "in": "query", "schema": { "type": "string" }, "description": "Free-text search" },
+          { "name": "category", "in": "query", "schema": { "type": "string" }, "description": "Filter by category" },
+          { "name": "state", "in": "query", "schema": { "type": "string" }, "description": "Filter by state (TN)" },
+          { "name": "level", "in": "query", "schema": { "type": "string", "enum": ["central", "state"] } }
+        ],
+        "responses": { "200": { "description": "Scheme list" } }
+      }
+    },
+    "/api/schemes/{id}": {
+      "get": {
+        "tags": ["Schemes"],
+        "summary": "Get a single scheme by ID",
+        "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }],
+        "responses": { "200": { "description": "Scheme detail" }, "404": { "description": "Not found" } }
+      }
+    },
+    "/api/match": {
+      "post": {
+        "tags": ["Match"],
+        "summary": "Match a profile against all schemes",
+        "requestBody": {
+          "required": true,
+          "content": { "application/json": { "schema": { "$ref": "#/components/schemas/MatchRequest" } } }
+        },
+        "responses": { "200": { "description": "Ranked matches" } }
+      }
+    },
+    "/api/eligibility/explain": {
+      "post": {
+        "tags": ["Match"],
+        "summary": "Explain eligibility for a specific scheme",
+        "requestBody": {
+          "required": true,
+          "content": { "application/json": { "schema": { "type": "object", "required": ["profile", "scheme_id"], "properties": { "profile": { "$ref": "#/components/schemas/Profile" }, "scheme_id": { "type": "string" } } } } }
+        },
+        "responses": { "200": { "description": "Per-condition breakdown" }, "400": { "description": "Missing fields" }, "404": { "description": "Scheme not found" } }
+      }
+    },
+    "/api/application/draft": {
+      "post": {
+        "tags": ["Application"],
+        "summary": "Generate a pre-filled application draft",
+        "requestBody": {
+          "required": true,
+          "content": { "application/json": { "schema": { "type": "object", "required": ["profile", "scheme_id"], "properties": { "profile": { "$ref": "#/components/schemas/Profile" }, "scheme_id": { "type": "string" } } } } }
+        },
+        "responses": { "200": { "description": "Application draft with checklist" } }
+      }
+    },
+    "/api/sms/send-summary": {
+      "post": {
+        "tags": ["Application"],
+        "summary": "Send matched schemes via SMS",
+        "requestBody": {
+          "required": true,
+          "content": { "application/json": { "schema": { "type": "object", "required": ["phone", "profile"], "properties": { "phone": { "type": "string" }, "profile": { "$ref": "#/components/schemas/Profile" }, "limit": { "type": "integer", "default": 5 } } } } }
+        },
+        "responses": { "200": { "description": "SMS sent (or mocked)" } }
+      }
+    },
+    "/api/nearest-office": {
+      "get": {
+        "tags": ["Offices"],
+        "summary": "Find nearest service offices",
+        "parameters": [
+          { "name": "lat", "in": "query", "schema": { "type": "number" } },
+          { "name": "lng", "in": "query", "schema": { "type": "number" } },
+          { "name": "district", "in": "query", "schema": { "type": "string" } },
+          { "name": "limit", "in": "query", "schema": { "type": "integer", "default": 5 } }
+        ],
+        "responses": { "200": { "description": "Sorted office list" } }
+      }
+    },
+    "/api/stats/public": {
+      "get": {
+        "tags": ["Analytics"],
+        "summary": "Public stats for landing page",
+        "responses": { "200": { "description": "Scheme count, office count, sessions" } }
+      }
+    },
+    "/api/offices": {
+      "get": {
+        "tags": ["Offices"],
+        "summary": "List offices by district or pincode",
+        "parameters": [
+          { "name": "district", "in": "query", "schema": { "type": "string" } },
+          { "name": "pincode", "in": "query", "schema": { "type": "string" } }
+        ],
+        "responses": { "200": { "description": "Office list" } }
+      }
+    },
+    "/api/sessions/recent": {
+      "get": { "tags": ["Analytics"], "summary": "Recent sessions for dashboard", "responses": { "200": { "description": "Session list" } } }
+    },
+    "/api/analytics/summary": {
+      "get": { "tags": ["Analytics"], "summary": "Aggregated analytics", "responses": { "200": { "description": "Summary with district/scheme breakdowns" } } }
+    },
+    "/api/schemes-stats": {
+      "get": { "tags": ["Analytics"], "summary": "Scheme KB stats by category/level", "responses": { "200": { "description": "Stats" } } }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Profile": {
+        "type": "object",
+        "properties": {
+          "age": { "type": "integer", "example": 68 },
+          "gender": { "type": "string", "enum": ["M", "F"], "example": "F" },
+          "state": { "type": "string", "example": "TN" },
+          "district": { "type": "string", "example": "Namakkal" },
+          "occupation": { "type": "string", "example": "housewife" },
+          "annual_income": { "type": "number", "example": 0 },
+          "is_disabled": { "type": "boolean", "example": false },
+          "marital_status": { "type": "string", "enum": ["married", "single", "widow", "divorced"], "example": "widow" },
+          "social_category": { "type": "string", "enum": ["General", "OBC", "MBC", "SC", "ST"], "example": "OBC" },
+          "land_hectares": { "type": "number", "example": 0 }
+        }
+      },
+      "MatchRequest": {
+        "type": "object",
+        "required": ["profile"],
+        "properties": {
+          "profile": { "$ref": "#/components/schemas/Profile" },
+          "limit": { "type": "integer", "default": 10 }
+        }
+      }
+    }
+  }
+}

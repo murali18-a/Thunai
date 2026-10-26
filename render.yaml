@@ -1,0 +1,39 @@
+services:
+  - type: web
+    name: thunai-backend
+    runtime: node
+    plan: free
+    buildCommand: cd backend && npm ci
+    startCommand: cd backend && node src/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 4000
+      - key: MONGODB_URI
+        sync: false
+      - key: TWILIO_ACCOUNT_SID
+        sync: false
+      - key: TWILIO_AUTH_TOKEN
+        sync: false
+      - key: BHASHINI_API_KEY
+        sync: false
+    healthCheckPath: /api/health
+
+  - type: web
+    name: thunai-dashboard
+    runtime: static
+    plan: free
+    buildCommand: cd dashboard && npm ci && npm run build
+    staticPublishPath: dashboard/dist
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=86400
+    routes:
+      - type: rewrite
+        source: /api/*
+        destination: https://thunai-backend.onrender.com/api/*
+      - type: rewrite
+        source: /*
+        destination: /index.html

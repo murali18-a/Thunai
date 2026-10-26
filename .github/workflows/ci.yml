@@ -1,0 +1,66 @@
+name: Thunai CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18, 20, 22]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+          cache-dependency-path: backend/package-lock.json
+
+      - name: Install backend dependencies
+        working-directory: backend
+        run: npm ci
+
+      - name: Validate KB (150 schemes, 60 offices)
+        working-directory: backend
+        run: node scripts/validate-kb.js
+
+      - name: Run tests (46+ tests)
+        working-directory: backend
+        run: node --test tests/engine.test.js
+
+      - name: Check server boots (in-memory mode)
+        working-directory: backend
+        run: |
+          timeout 10 node src/server.js &
+          sleep 3
+          curl -sf http://localhost:4000/api/health | grep -q '"ok":true'
+          echo "✅ Server health check passed"
+          kill %1 || true
+
+  dashboard-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: dashboard/package-lock.json
+
+      - name: Install dashboard dependencies
+        working-directory: dashboard
+        run: npm ci
+
+      - name: Build dashboard
+        working-directory: dashboard
+        run: npm run build
+        env:
+          VITE_API_BASE: http://localhost:4000

@@ -1,0 +1,5699 @@
+[
+  {
+    "scheme_id": "TN_DESERTED_WOMAN_PENSION",
+    "name_ta": "கைவிடப்பட்ட பெண்களுக்கு ஓய்வூதியம்",
+    "name_en": "TN Deserted Woman Pension",
+    "ministry": "TN Social Welfare & Women Empowerment",
+    "level": "state",
+    "state": "TN",
+    "category": "pension",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 1000,
+      "description_ta": "மாதம் ரூபாய் 1000 ஓய்வூதியம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            30
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "marital_status"
+            },
+            "divorced"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            72000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "30 வயதுக்கு மேற்பட்ட கைவிடப்பட்ட / விவாகரத்து பெண்கள், வருடாந்திர வருமானம் 72,000 க்குக் கீழ்.",
+    "documents_required": [
+      "ஆதார்",
+      "விவாகரத்து ஆணை / கைவிடப்பட்ட சான்று",
+      "வருமானச் சான்று",
+      "குடும்ப அட்டை"
+    ],
+    "where_to_apply": "கிராம நிர்வாக அலுவலகம் (VAO)",
+    "how_to_apply_steps": [
+      "VAO-விடம் விண்ணப்பம்",
+      "ஆவணச் சரிபார்ப்பு",
+      "மாவட்ட அலுவலர் ஒப்புதல்"
+    ],
+    "helpline": "1800-425-1515",
+    "source_url": "https://cmsps.tn.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "woman",
+      "pension",
+      "divorced"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_UNMARRIED_WOMAN_PENSION",
+    "name_ta": "திருமணமாகாத பெண்களுக்கு ஓய்வூதியம்",
+    "name_en": "TN Unmarried Woman Pension (40+)",
+    "ministry": "TN Social Welfare",
+    "level": "state",
+    "state": "TN",
+    "category": "pension",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 1000
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            40
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "marital_status"
+            },
+            "single"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            72000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "40 வயதுக்கு மேற்பட்ட திருமணமாகாத பெண்கள், BPL.",
+    "documents_required": [
+      "ஆதார்",
+      "வருமானச் சான்று",
+      "திருமணமாகாத சான்றிதழ்"
+    ],
+    "where_to_apply": "கிராம நிர்வாக அலுவலகம் (VAO)",
+    "how_to_apply_steps": [
+      "VAO-விடம் விண்ணப்பம்",
+      "ஆவணச் சரிபார்ப்பு"
+    ],
+    "helpline": "1800-425-1515",
+    "source_url": "https://cmsps.tn.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "woman",
+      "pension"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_BC_MBC_SCHOLARSHIP",
+    "name_ta": "பிற்படுத்தப்பட்டோர் / மிகவும் பிற்படுத்தப்பட்டோர் மேல்நிலைக்கு மேலான உதவித்தொகை",
+    "name_en": "TN BC/MBC Post-Matric Scholarship",
+    "ministry": "TN BC, MBC & Minorities Welfare",
+    "level": "state",
+    "state": "TN",
+    "category": "education",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 1000,
+      "description_ta": "கல்லூரி கட்டணம் + மாத உதவித்தொகை"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "in": [
+            {
+              "var": "social_category"
+            },
+            [
+              "OBC",
+              "MBC"
+            ]
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "student"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            15
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            200000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "BC / MBC சமூகத்தைச் சேர்ந்த கல்லூரி மாணவர்கள், குடும்ப வருமானம் 2 லட்சத்திற்குக் கீழ்.",
+    "documents_required": [
+      "சாதிச் சான்றிதழ்",
+      "கல்லூரி சேர்க்கை",
+      "வருமானச் சான்று",
+      "ஆதார்"
+    ],
+    "where_to_apply": "கல்லூரி / tngmsscholarship.tn.gov.in",
+    "how_to_apply_steps": [
+      "ஆன்லைன் விண்ணப்பம்",
+      "கல்லூரி சரிபார்ப்பு",
+      "DBT"
+    ],
+    "helpline": "044-2567-8900",
+    "source_url": "https://bcmbcmw.tn.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "student",
+      "obc",
+      "mbc",
+      "education"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_INTER_CASTE_MARRIAGE",
+    "name_ta": "சாதிகளுக்கு இடையேயான திருமண உதவி",
+    "name_en": "TN Inter-Caste Marriage Assistance",
+    "ministry": "TN Adi Dravidar & Tribal Welfare",
+    "level": "state",
+    "state": "TN",
+    "category": "grant",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 50000,
+      "description_ta": "இரு சமூகங்களுக்கிடையேயான திருமணத்திற்கு 50,000 ரூபாய்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            40
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            250000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "SC/ST மற்றும் மற்ற சமூகத்தவருக்கிடையேயான திருமண ஜோடிகள்.",
+    "documents_required": [
+      "திருமணப் பதிவு சான்று",
+      "சாதிச் சான்றிதழ்",
+      "ஆதார்",
+      "கூட்டு வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "மாவட்ட ஆதி திராவிடர் நல அலுவலகம்",
+    "how_to_apply_steps": [
+      "மாவட்ட அலுவலகத்தில் விண்ணப்பம்",
+      "சரிபார்ப்பு"
+    ],
+    "helpline": "044-2432-3340",
+    "source_url": "https://adidravidartribal.tn.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "marriage",
+      "sc",
+      "st",
+      "grant"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_FREE_CYCLE",
+    "name_ta": "அரசு பள்ளி மாணவர்களுக்கு இலவச மிதிவண்டி",
+    "name_en": "TN Free Bicycle for Government School Students",
+    "ministry": "TN School Education",
+    "level": "state",
+    "state": "TN",
+    "category": "education",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "11-ம் வகுப்பு மாணவர்களுக்கு இலவச மிதிவண்டி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            14
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "student"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "அரசு / நிதியுதவி பள்ளிகளில் 11 வகுப்பு படிக்கும் மாணவர்கள்.",
+    "documents_required": [
+      "படிப்புச் சான்று",
+      "ஆதார்"
+    ],
+    "where_to_apply": "பள்ளி மூலமாக",
+    "how_to_apply_steps": [
+      "பள்ளி தலைமை ஆசிரியர் மூலம் விநியோகம்"
+    ],
+    "helpline": "1800-425-5500",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "student",
+      "education",
+      "transport"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_FREE_TEXTBOOKS",
+    "name_ta": "இலவச பாடநூல்கள் மற்றும் சீருடை",
+    "name_en": "TN Free Textbooks & Uniforms for Students",
+    "ministry": "TN School Education",
+    "level": "state",
+    "state": "TN",
+    "category": "education",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "இலவச பாடநூல்கள் + நான்கு செட் சீருடை"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            5
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "student"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "அரசு பள்ளி மாணவர்கள்.",
+    "documents_required": [
+      "படிப்புச் சான்று"
+    ],
+    "where_to_apply": "பள்ளி",
+    "how_to_apply_steps": [
+      "பள்ளியில் தானாக வழங்கப்படும்"
+    ],
+    "helpline": "1800-425-5500",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "student",
+      "education"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_NOON_MEAL",
+    "name_ta": "சத்துணவுத் திட்டம்",
+    "name_en": "TN Nutritious Meal Programme (Mid-Day Meal)",
+    "ministry": "TN Social Welfare",
+    "level": "state",
+    "state": "TN",
+    "category": "food",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "பள்ளி நேரத்தில் இலவச சத்துணவு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            3
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            15
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "அரசு பள்ளி மற்றும் அங்கன்வாடி குழந்தைகள்.",
+    "documents_required": [
+      "பள்ளி அடையாள அட்டை"
+    ],
+    "where_to_apply": "பள்ளி / அங்கன்வாடி",
+    "how_to_apply_steps": [
+      "தானாக வழங்கப்படும்"
+    ],
+    "helpline": "1800-425-5500",
+    "source_url": "https://middaymeals.tn.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "child",
+      "food",
+      "education"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_CONSTRUCTION_WORKER_WELFARE",
+    "name_ta": "கட்டுமானத் தொழிலாளர் நல வாரியம்",
+    "name_en": "TN Construction Workers Welfare Board",
+    "ministry": "TN Labour & Employment",
+    "level": "state",
+    "state": "TN",
+    "category": "social_security",
+    "benefit": {
+      "kind": "insurance_cover",
+      "amount": 400000,
+      "description_ta": "மரணம், விபத்து, கல்வி, மருத்துவ உதவி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "labourer"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            60
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "18-60 வயது கட்டுமானத் தொழிலாளர்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "தொழிலாளி அடையாள அட்டை",
+      "புகைப்படம்"
+    ],
+    "where_to_apply": "மாவட்ட தொழிலாளர் நல அலுவலகம்",
+    "how_to_apply_steps": [
+      "அலுவலகத்தில் பதிவு",
+      "ஆண்டுக் கட்டணம் 50 ரூபாய்"
+    ],
+    "helpline": "044-2855-9988",
+    "source_url": "https://labour.tn.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "labourer",
+      "welfare",
+      "construction"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_FREE_GRINDER_MIXIE",
+    "name_ta": "இலவச மிக்ஸி / கிரைண்டர் திட்டம்",
+    "name_en": "TN Free Mixie/Grinder Scheme for Women",
+    "ministry": "TN Social Welfare",
+    "level": "state",
+    "state": "TN",
+    "category": "grant",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "இலவச மிக்ஸி, கிரைண்டர், மின்விசிறி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            120000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "குடும்ப அட்டை உள்ள 18+ வயது பெண்கள்.",
+    "documents_required": [
+      "குடும்ப அட்டை",
+      "ஆதார்"
+    ],
+    "where_to_apply": "இ-சேவை மையம் / VAO",
+    "how_to_apply_steps": [
+      "VAO-விடம் விண்ணப்பம்",
+      "பொருட்கள் விநியோகம்"
+    ],
+    "helpline": "1800-425-1515",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "woman",
+      "household"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_FARMER_MICRO_IRRIGATION",
+    "name_ta": "நுண் நீர்ப்பாசனத் திட்ட மானியம்",
+    "name_en": "TN Micro Irrigation Subsidy (Drip/Sprinkler)",
+    "ministry": "TN Agriculture",
+    "level": "state",
+    "state": "TN",
+    "category": "agriculture",
+    "benefit": {
+      "kind": "subsidy_pct",
+      "amount": 100,
+      "description_ta": "நுண் நீர்ப்பாசன சாதனங்களுக்கு 100% மானியம் (சிறு விவசாயிகள்)"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "farmer"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "land_hectares"
+            },
+            5
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "5 ஹெக்டருக்குக் கீழ் நிலம் உள்ள விவசாயிகள்.",
+    "documents_required": [
+      "பட்டா",
+      "ஆதார்",
+      "வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "வேளாண் பொறியியல் துறை",
+    "how_to_apply_steps": [
+      "வேளாண் அலுவலகத்தில் விண்ணப்பம்",
+      "நில சரிபார்ப்பு",
+      "சாதனம் நிறுவல்"
+    ],
+    "helpline": "1800-425-1556",
+    "source_url": "https://www.tnagrisnet.tn.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "farmer",
+      "irrigation",
+      "subsidy"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_FISHERMAN_HOUSING",
+    "name_ta": "மீனவர் வீட்டுவசதி திட்டம்",
+    "name_en": "TN Fishermen Housing Scheme",
+    "ministry": "TN Fisheries",
+    "level": "state",
+    "state": "TN",
+    "category": "housing",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 400000,
+      "description_ta": "வீடு கட்ட 4 லட்சம் ரூபாய் உதவி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "fisher"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            200000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "சொந்த வீடு இல்லாத மீனவக் குடும்பங்கள்.",
+    "documents_required": [
+      "மீனவர் அடையாள அட்டை",
+      "ஆதார்",
+      "வீடு இல்லை சான்று"
+    ],
+    "where_to_apply": "மீன்வளத் துறை அலுவலகம்",
+    "how_to_apply_steps": [
+      "அலுவலகத்தில் விண்ணப்பம்",
+      "சரிபார்ப்பு",
+      "தொகை வழங்கல்"
+    ],
+    "helpline": "1800-425-1660",
+    "source_url": "https://www.fisheries.tn.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "fisher",
+      "housing"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_FISHERMAN_DIESEL",
+    "name_ta": "மீனவர் டீசல் மானியம்",
+    "name_en": "TN Fishermen Diesel Subsidy",
+    "ministry": "TN Fisheries",
+    "level": "state",
+    "state": "TN",
+    "category": "subsidy",
+    "benefit": {
+      "kind": "subsidy_pct",
+      "amount": 50,
+      "description_ta": "படகு டீசல் மீது 50% மானியம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "fisher"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "பதிவுசெய்த கடல் மீனவர்கள்.",
+    "documents_required": [
+      "மீனவர் அடையாள அட்டை",
+      "படகு உரிமம்",
+      "ஆதார்"
+    ],
+    "where_to_apply": "மீன்வளத் துறை",
+    "how_to_apply_steps": [
+      "மீன்வளத் துறை அலுவலகத்தில் பதிவு"
+    ],
+    "helpline": "1800-425-1660",
+    "source_url": "https://www.fisheries.tn.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "fisher",
+      "subsidy"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_HANDLOOM_FREE_HOUSE",
+    "name_ta": "நெசவாளர் வீட்டுவசதி திட்டம்",
+    "name_en": "TN Handloom Weaver Housing Scheme",
+    "ministry": "TN Handlooms & Textiles",
+    "level": "state",
+    "state": "TN",
+    "category": "housing",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 300000,
+      "description_ta": "வீடு கட்ட 3 லட்சம் ரூபாய்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "weaver"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            200000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "சொந்த வீடு இல்லாத கைத்தறி நெசவாளர்.",
+    "documents_required": [
+      "நெசவாளர் அடையாள அட்டை",
+      "ஆதார்",
+      "வீடு இல்லை சான்று"
+    ],
+    "where_to_apply": "கைத்தறித் துறை",
+    "how_to_apply_steps": [
+      "அலுவலகத்தில் விண்ணப்பம்"
+    ],
+    "helpline": "044-2432-1515",
+    "source_url": "https://handlooms.tn.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "weaver",
+      "housing"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_DIFF_ABLED_SCHOLARSHIP",
+    "name_ta": "மாற்றுத்திறனாளி மாணவர் உதவித்தொகை",
+    "name_en": "TN Differently Abled Students Scholarship",
+    "ministry": "TN Welfare of Differently Abled Persons",
+    "level": "state",
+    "state": "TN",
+    "category": "education",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 1500,
+      "description_ta": "கல்லூரி கட்டணம் + மாத உதவித்தொகை"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "is_disabled"
+            },
+            true
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "student"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            15
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "40% அல்லது அதற்கு மேல் மாற்றுத்திறன் சான்றிதழ் உள்ள மாணவர்கள்.",
+    "documents_required": [
+      "UDID",
+      "கல்லூரி சேர்க்கை",
+      "ஆதார்"
+    ],
+    "where_to_apply": "கல்லூரி / மாவட்ட மாற்றுத்திறனாளி நல அலுவலகம்",
+    "how_to_apply_steps": [
+      "கல்லூரி வழியாக விண்ணப்பம்",
+      "DBT"
+    ],
+    "helpline": "1800-425-1515",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "disabled",
+      "student",
+      "education"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_DIFF_ABLED_SELF_EMPLOYMENT",
+    "name_ta": "மாற்றுத்திறனாளி சுய வேலைவாய்ப்பு கடன்",
+    "name_en": "TN Differently Abled Self-Employment Loan",
+    "ministry": "TN Welfare of Differently Abled Persons",
+    "level": "state",
+    "state": "TN",
+    "category": "loan",
+    "benefit": {
+      "kind": "loan",
+      "amount": 200000,
+      "description_ta": "சுய தொழில் தொடங்க 2 லட்சம் வரை கடன்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "is_disabled"
+            },
+            true
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            60
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "18-60 வயது UDID சான்றிதழ் உள்ள மாற்றுத்திறனாளிகள்.",
+    "documents_required": [
+      "UDID",
+      "ஆதார்",
+      "வணிகத் திட்டம்",
+      "வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "மாவட்ட மாற்றுத்திறனாளி நல அலுவலகம்",
+    "how_to_apply_steps": [
+      "அலுவலகத்தில் விண்ணப்பம்",
+      "திட்ட மதிப்பீடு"
+    ],
+    "helpline": "1800-425-1515",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "disabled",
+      "loan",
+      "self_employment"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_MINORITY_SCHOLARSHIP",
+    "name_ta": "சிறுபான்மையினர் கல்வி உதவித்தொகை (மாநிலம்)",
+    "name_en": "TN Minority Students Scholarship",
+    "ministry": "TN BC, MBC & Minorities Welfare",
+    "level": "state",
+    "state": "TN",
+    "category": "education",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 10000,
+      "description_ta": "கல்விக் கட்டணம் + உதவித்தொகை"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "student"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            15
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            200000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "சிறுபான்மை சமூக மாணவர்கள், குடும்ப வருமானம் 2 லட்சத்திற்குக் கீழ்.",
+    "documents_required": [
+      "சிறுபான்மை சமூகச் சான்று",
+      "கல்லூரி சேர்க்கை",
+      "வருமானச் சான்று",
+      "ஆதார்"
+    ],
+    "where_to_apply": "scholarships.gov.in",
+    "how_to_apply_steps": [
+      "ஆன்லைன் விண்ணப்பம்",
+      "கல்லூரி சரிபார்ப்பு"
+    ],
+    "helpline": "044-2567-8900",
+    "source_url": "https://bcmbcmw.tn.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "student",
+      "minority",
+      "education"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_AGED_CARE_HOME",
+    "name_ta": "முதியோர் இல்லம்",
+    "name_en": "TN Old Age Home (Free Residential Care)",
+    "ministry": "TN Social Welfare",
+    "level": "state",
+    "state": "TN",
+    "category": "social_security",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "இலவச தங்குமிடம், உணவு, மருத்துவ வசதி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            60
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            72000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "60 வயதுக்கு மேற்பட்ட ஆதரவற்ற முதியோர்.",
+    "documents_required": [
+      "ஆதார்",
+      "வயதுச் சான்று",
+      "ஆதரவற்ற சான்று"
+    ],
+    "where_to_apply": "மாவட்ட சமூகநல அலுவலகம்",
+    "how_to_apply_steps": [
+      "சமூகநல அலுவலகத்தில் விண்ணப்பம்"
+    ],
+    "helpline": "1800-425-1515",
+    "source_url": "https://www.tnsocialwelfare.tn.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "elderly",
+      "social_security"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_TRANSGENDER_WELFARE",
+    "name_ta": "திருநங்கை நல திட்டம்",
+    "name_en": "TN Transgender Welfare Scheme",
+    "ministry": "TN Social Welfare",
+    "level": "state",
+    "state": "TN",
+    "category": "social_security",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 1000,
+      "description_ta": "மாதம் 1000 ரூபாய் நிதி உதவி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            72000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "18 வயதுக்கு மேற்பட்ட TG அடையாள அட்டை பெற்ற திருநங்கைகள்.",
+    "documents_required": [
+      "TG அடையாள அட்டை",
+      "ஆதார்",
+      "வருமானச் சான்று"
+    ],
+    "where_to_apply": "மாவட்ட சமூகநல அலுவலகம்",
+    "how_to_apply_steps": [
+      "மாவட்ட அலுவலகத்தில் விண்ணப்பம்"
+    ],
+    "helpline": "1800-425-1515",
+    "source_url": "https://www.tnsocialwelfare.tn.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "transgender",
+      "welfare"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_GIRL_CHILD_PROTECTION",
+    "name_ta": "பெண் குழந்தை பாதுகாப்புத் திட்டம்",
+    "name_en": "TN Girl Child Protection Scheme",
+    "ministry": "TN Social Welfare",
+    "level": "state",
+    "state": "TN",
+    "category": "grant",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 50000,
+      "description_ta": "பெண் குழந்தை 18 வயதில் 50,000 ரூபாய் முதிர்வுத் தொகை"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            10
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            72000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "BPL குடும்பத்தின் பெண் குழந்தைகள்.",
+    "documents_required": [
+      "பிறப்புச் சான்று",
+      "பெற்றோர் ஆதார்",
+      "குடும்ப அட்டை"
+    ],
+    "where_to_apply": "ICDS / VAO",
+    "how_to_apply_steps": [
+      "அங்கன்வாடி / VAO-விடம் பதிவு"
+    ],
+    "helpline": "1800-425-1515",
+    "source_url": "https://www.tnsocialwelfare.tn.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "child",
+      "girl",
+      "grant"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_ANNAL_AMBEDKAR_HOUSING",
+    "name_ta": "அண்ணல் அம்பேத்கர் வீட்டுவசதி திட்டம் (SC/ST)",
+    "name_en": "TN Dr. Ambedkar Housing Scheme for SC/ST",
+    "ministry": "TN Adi Dravidar & Tribal Welfare",
+    "level": "state",
+    "state": "TN",
+    "category": "housing",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 250000,
+      "description_ta": "SC/ST குடும்பங்களுக்கு வீடு கட்ட 2.5 லட்சம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "in": [
+            {
+              "var": "social_category"
+            },
+            [
+              "SC",
+              "ST"
+            ]
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            21
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            200000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "SC/ST சமூகத்தினர், சொந்த வீடு இல்லாதவர், வருமானம் 2 லட்சத்திற்குக் கீழ்.",
+    "documents_required": [
+      "சாதிச் சான்றிதழ்",
+      "ஆதார்",
+      "நிலச் சான்று",
+      "வருமானச் சான்று"
+    ],
+    "where_to_apply": "மாவட்ட ஆதி திராவிடர் நல அலுவலகம்",
+    "how_to_apply_steps": [
+      "மாவட்ட அலுவலகத்தில் விண்ணப்பம்",
+      "சரிபார்ப்பு"
+    ],
+    "helpline": "044-2432-3340",
+    "source_url": "https://adidravidartribal.tn.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "sc",
+      "st",
+      "housing"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_SHG_REVOLVING_FUND",
+    "name_ta": "சுய உதவிக் குழு சுழல் நிதி",
+    "name_en": "TN SHG Revolving Fund",
+    "ministry": "TN Rural Development (TNSRLM)",
+    "level": "state",
+    "state": "TN",
+    "category": "loan",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 15000,
+      "description_ta": "SHG குழுவிற்கு 15,000 ரூபாய் சுழல் நிதி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            200000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "SHG உறுப்பினர் பெண்கள்.",
+    "documents_required": [
+      "SHG பதிவு",
+      "ஆதார்",
+      "வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "கிராம ஊராட்சி / TNSRLM",
+    "how_to_apply_steps": [
+      "SHG குழுவில் சேர்க்கை",
+      "குழு வழியாக நிதி"
+    ],
+    "helpline": "1800-425-1515",
+    "source_url": "https://www.tnrd.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "woman",
+      "shg",
+      "loan"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_DRIVER_WELFARE",
+    "name_ta": "ஓட்டுநர் நல வாரியம்",
+    "name_en": "TN Auto/Taxi Driver Welfare Board",
+    "ministry": "TN Labour & Employment",
+    "level": "state",
+    "state": "TN",
+    "category": "social_security",
+    "benefit": {
+      "kind": "insurance_cover",
+      "amount": 200000,
+      "description_ta": "விபத்து / மரணம் / மருத்துவம் / கல்வி உதவி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "driver"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "ஆட்டோ / டாக்சி ஓட்டுநர்கள், 18+ வயது.",
+    "documents_required": [
+      "ஓட்டுநர் உரிமம்",
+      "ஆதார்",
+      "புகைப்படம்"
+    ],
+    "where_to_apply": "மாவட்ட தொழிலாளர் நல அலுவலகம்",
+    "how_to_apply_steps": [
+      "அலுவலகத்தில் பதிவு"
+    ],
+    "helpline": "044-2855-9988",
+    "source_url": "https://labour.tn.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "driver",
+      "welfare"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_CATTLE_INSURANCE",
+    "name_ta": "கால்நடை காப்பீட்டுத் திட்டம்",
+    "name_en": "TN Livestock Insurance Scheme",
+    "ministry": "TN Animal Husbandry",
+    "level": "state",
+    "state": "TN",
+    "category": "insurance",
+    "benefit": {
+      "kind": "insurance_cover",
+      "amount": 75000,
+      "description_ta": "கால்நடை இறப்புக்கு சந்தை மதிப்பு காப்பீடு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "farmer"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "கால்நடை வளர்க்கும் விவசாயிகள்.",
+    "documents_required": [
+      "கால்நடைப் பதிவு",
+      "ஆதார்"
+    ],
+    "where_to_apply": "கால்நடை மருத்துவ அலுவலகம்",
+    "how_to_apply_steps": [
+      "கால்நடை மருத்துவரிடம் பதிவு",
+      "காப்பீடு வழங்கல்"
+    ],
+    "helpline": "1800-425-1556",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "farmer",
+      "livestock",
+      "insurance"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_SOIL_HEALTH_CARD",
+    "name_ta": "மண் வள அட்டை திட்டம்",
+    "name_en": "TN Soil Health Card",
+    "ministry": "TN Agriculture",
+    "level": "state",
+    "state": "TN",
+    "category": "agriculture",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "இலவச மண் பரிசோதனை + உரப் பரிந்துரை"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "farmer"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "அனைத்து விவசாயிகளும்.",
+    "documents_required": [
+      "பட்டா",
+      "ஆதார்"
+    ],
+    "where_to_apply": "வேளாண் துறை / soilhealth.dac.gov.in",
+    "how_to_apply_steps": [
+      "அருகிலுள்ள வேளாண் அலுவலகத்தில் மண் மாதிரி கொடுக்கவும்"
+    ],
+    "helpline": "1800-425-1556",
+    "source_url": "https://www.tnagrisnet.tn.gov.in/",
+    "priority_weight": 4,
+    "tags": [
+      "farmer",
+      "agriculture"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_LEGAL_AID",
+    "name_ta": "இலவச சட்ட உதவி",
+    "name_en": "TN Free Legal Aid Services",
+    "ministry": "TN State Legal Services Authority",
+    "level": "state",
+    "state": "TN",
+    "category": "social_security",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "இலவச வழக்கறிஞர் + நீதிமன்ற செலவு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            300000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "SC/ST, பெண்கள், மாற்றுத்திறனாளிகள், BPL குடும்பங்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "வருமானச் சான்று"
+    ],
+    "where_to_apply": "மாவட்ட சட்ட சேவை ஆணையம்",
+    "how_to_apply_steps": [
+      "மாவட்ட நீதி மன்ற வளாகத்தில் சட்ட சேவை ஆணையத்தை அணுகவும்"
+    ],
+    "helpline": "15100",
+    "source_url": "https://tslsa.tn.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "legal",
+      "social_security"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_GREEN_HOUSE",
+    "name_ta": "பசுமை வீடு திட்டம் (கிராமம்)",
+    "name_en": "TN Green House Scheme (Rural)",
+    "ministry": "TN Rural Development",
+    "level": "state",
+    "state": "TN",
+    "category": "housing",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 300000,
+      "description_ta": "கிராமப்புற வீடு கட்ட 3 லட்சம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            21
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            200000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "கிராமப்புற வறிய குடும்பங்கள், சொந்த வீடு இல்லாதவர்.",
+    "documents_required": [
+      "ஆதார்",
+      "நிலச் சான்று",
+      "வருமானச் சான்று",
+      "குடும்ப அட்டை"
+    ],
+    "where_to_apply": "கிராம ஊராட்சி / BDO",
+    "how_to_apply_steps": [
+      "கிராம ஊராட்சியில் விண்ணப்பம்",
+      "BDO ஒப்புதல்"
+    ],
+    "helpline": "1800-425-1515",
+    "source_url": "https://www.tnrd.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "housing",
+      "rural"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_STARTUP_FUND",
+    "name_ta": "தமிழ்நாடு தொடக்க நிறுவன நிதி",
+    "name_en": "TN Startup Fund (TANSEED)",
+    "ministry": "TN IT & Digital Services / StartupTN",
+    "level": "state",
+    "state": "TN",
+    "category": "startup",
+    "benefit": {
+      "kind": "loan",
+      "amount": 1000000,
+      "description_ta": "தொடக்க நிறுவனங்களுக்கு 10 லட்சம் வரை நிதி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            40
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "DPIIT பதிவு செய்த தமிழ்நாட்டு தொடக்க நிறுவன நிறுவனர்கள்.",
+    "documents_required": [
+      "DPIIT பதிவு",
+      "வணிகத் திட்டம்",
+      "ஆதார்"
+    ],
+    "where_to_apply": "startuptn.in",
+    "how_to_apply_steps": [
+      "startuptn.in-ல் பதிவு",
+      "TANSEED-க்கு விண்ணப்பம்"
+    ],
+    "helpline": "044-2232-3232",
+    "source_url": "https://startuptn.in/",
+    "priority_weight": 5,
+    "tags": [
+      "startup",
+      "youth",
+      "loan"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_EV_SUBSIDY",
+    "name_ta": "மின்சார வாகன மானியம்",
+    "name_en": "TN Electric Vehicle Subsidy",
+    "ministry": "TN Industries",
+    "level": "state",
+    "state": "TN",
+    "category": "subsidy",
+    "benefit": {
+      "kind": "subsidy_pct",
+      "amount": 15,
+      "description_ta": "மின்சார இருசக்கர வாகன விலையில் 15% மானியம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "தமிழ்நாட்டில் வாழும் 18+ வயதினர்.",
+    "documents_required": [
+      "ஆதார்",
+      "வாகன வாங்கல் இரசீது"
+    ],
+    "where_to_apply": "tnepass.tn.gov.in",
+    "how_to_apply_steps": [
+      "tnepass.tn.gov.in-ல் ஆன்லைன் விண்ணப்பம்"
+    ],
+    "helpline": "044-2345-6789",
+    "source_url": "https://tnepass.tn.gov.in/",
+    "priority_weight": 4,
+    "tags": [
+      "vehicle",
+      "subsidy"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_UZHAVAR_UTHAVIYALAR",
+    "name_ta": "உழவர் உதவியாளர் திட்டம்",
+    "name_en": "TN Uzhavar Uthaviyalar (Farm Assistant)",
+    "ministry": "TN Agriculture",
+    "level": "state",
+    "state": "TN",
+    "category": "employment",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 10000,
+      "description_ta": "விவசாய ஆலோசகராக மாத ஊதியம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            20
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            35
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "வேளாண் பட்டம் / டிப்ளோமா பெற்ற 20-35 வயது இளைஞர்கள்.",
+    "documents_required": [
+      "வேளாண் பட்டம்/டிப்ளோமா",
+      "ஆதார்"
+    ],
+    "where_to_apply": "வேளாண் துறை",
+    "how_to_apply_steps": [
+      "வேளாண் துறை அறிவிப்பின்படி விண்ணப்பம்"
+    ],
+    "helpline": "1800-425-1556",
+    "source_url": "https://www.tnagrisnet.tn.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "employment",
+      "farmer",
+      "youth"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_SALT_PAN_WORKERS",
+    "name_ta": "உப்பளத் தொழிலாளர் நல திட்டம்",
+    "name_en": "TN Salt Pan Workers Welfare",
+    "ministry": "TN Labour",
+    "level": "state",
+    "state": "TN",
+    "category": "social_security",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 1000,
+      "description_ta": "ஓய்வூதியம் + கல்வி உதவி + மருத்துவ உதவி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "labourer"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            60
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "உப்பளத் தொழிலாளர்கள் பதிவு செய்தவர்கள்.",
+    "documents_required": [
+      "தொழிலாளர் அடையாள அட்டை",
+      "ஆதார்"
+    ],
+    "where_to_apply": "தொழிலாளர் நல அலுவலகம்",
+    "how_to_apply_steps": [
+      "அலுவலகத்தில் பதிவு"
+    ],
+    "helpline": "044-2855-9988",
+    "source_url": "https://labour.tn.gov.in/",
+    "priority_weight": 4,
+    "tags": [
+      "labourer",
+      "welfare"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_PM_GARIB_KALYAN",
+    "name_ta": "பிரதான் மந்திரி கரீப் கல்யாண் அன்ன யோஜனா",
+    "name_en": "PM Garib Kalyan Anna Yojana (Free Ration)",
+    "ministry": "Ministry of Consumer Affairs",
+    "level": "central",
+    "state": null,
+    "category": "food",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "ஒரு நபருக்கு மாதம் 5 கிலோ இலவச அரிசி/கோதுமை"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            1
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "NFSA குடும்ப அட்டை உள்ள அனைத்து குடும்பங்களும்.",
+    "documents_required": [
+      "குடும்ப அட்டை",
+      "ஆதார்"
+    ],
+    "where_to_apply": "அருகிலுள்ள ரேஷன் கடை",
+    "how_to_apply_steps": [
+      "ரேஷன் கடையில் குடும்ப அட்டை காட்டி பெறவும்"
+    ],
+    "helpline": "1967",
+    "source_url": "https://dfpd.gov.in/",
+    "priority_weight": 8,
+    "tags": [
+      "central",
+      "food",
+      "ration"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_PM_VISHWAKARMA",
+    "name_ta": "பிரதான் மந்திரி விஸ்வகர்மா திட்டம்",
+    "name_en": "PM Vishwakarma (Artisan/Craftsmen Support)",
+    "ministry": "Ministry of MSME",
+    "level": "central",
+    "state": null,
+    "category": "loan",
+    "benefit": {
+      "kind": "loan",
+      "amount": 300000,
+      "description_ta": "கைவினைஞர்களுக்கு 3 லட்சம் வரை குறைந்த வட்டிக் கடன் + பயிற்சி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            500000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "தச்சர், கொல்லர், குயவர், நெசவாளர் போன்ற 18 வகை கைவினைஞர்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "வங்கிக் கணக்கு",
+      "தொழில் சான்று"
+    ],
+    "where_to_apply": "pmvishwakarma.gov.in / CSC",
+    "how_to_apply_steps": [
+      "pmvishwakarma.gov.in-ல் பதிவு",
+      "கிராம நிலை குழு சரிபார்ப்பு"
+    ],
+    "helpline": "1800-599-0015",
+    "source_url": "https://pmvishwakarma.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "central",
+      "artisan",
+      "loan",
+      "skill"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_PM_SVA_NIDHI",
+    "name_ta": "பிரதான் மந்திரி தெருவோர வியாபாரிகள் நிதி",
+    "name_en": "PM SVANidhi (Street Vendor Micro-Credit)",
+    "ministry": "Ministry of Housing & Urban Affairs",
+    "level": "central",
+    "state": null,
+    "category": "loan",
+    "benefit": {
+      "kind": "loan",
+      "amount": 50000,
+      "description_ta": "தெருவோர வியாபாரிகளுக்கு 50,000 வரை கடன்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            200000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "நகர்ப்புற தெருவோர வியாபாரிகள், பதிவு செய்தவர் அல்லது CoV உள்ளவர்.",
+    "documents_required": [
+      "CoV / நகராட்சி சான்று",
+      "ஆதார்",
+      "வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "pmsvanidhi.mohua.gov.in / நகராட்சி",
+    "how_to_apply_steps": [
+      "pmsvanidhi.mohua.gov.in-ல் விண்ணப்பம்"
+    ],
+    "helpline": "1800-11-2345",
+    "source_url": "https://pmsvanidhi.mohua.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "central",
+      "vendor",
+      "loan"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_NATIONAL_PENSION",
+    "name_ta": "தேசிய ஓய்வூதிய திட்டம் (NPS)",
+    "name_en": "National Pension Scheme (NPS)",
+    "ministry": "Ministry of Finance",
+    "level": "central",
+    "state": null,
+    "category": "pension",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 5000,
+      "description_ta": "ஓய்வுக்குப் பிறகு ஓய்வூதியம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            65
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "18-65 வயது இந்தியக் குடிமக்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "PAN",
+      "வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "enps.nsdl.com / வங்கி",
+    "how_to_apply_steps": [
+      "ஆன்லைன் / வங்கி வழியாக NPS கணக்கு திறப்பு"
+    ],
+    "helpline": "1800-110-708",
+    "source_url": "https://npscra.nsdl.co.in/",
+    "priority_weight": 4,
+    "tags": [
+      "central",
+      "pension"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_NSAP_FAMILY_BENEFIT",
+    "name_ta": "தேசிய குடும்ப நல திட்டம் (NFBS)",
+    "name_en": "National Family Benefit Scheme (NFBS)",
+    "ministry": "Ministry of Rural Development",
+    "level": "central",
+    "state": null,
+    "category": "grant",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 20000,
+      "description_ta": "குடும்பத் தலைவர் மரணத்தில் 20,000 ரூபாய்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            72000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "BPL குடும்பம், வருமானம் ஈட்டுபவர் மரணம் (18-59 வயது).",
+    "documents_required": [
+      "ஆதார்",
+      "மரணச் சான்றிதழ்",
+      "BPL சான்று",
+      "குடும்ப உறவு சான்று"
+    ],
+    "where_to_apply": "VAO / BDO",
+    "how_to_apply_steps": [
+      "VAO-விடம் விண்ணப்பம்"
+    ],
+    "helpline": "1800-11-6446",
+    "source_url": "https://nsap.nic.in/",
+    "priority_weight": 7,
+    "tags": [
+      "central",
+      "grant",
+      "family"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_SKILL_INDIA",
+    "name_ta": "திறன் இந்தியா (PMKVY)",
+    "name_en": "PM Kaushal Vikas Yojana (Skill India)",
+    "ministry": "Ministry of Skill Development",
+    "level": "central",
+    "state": null,
+    "category": "education",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "இலவச திறன் பயிற்சி + சான்றிதழ் + வேலை வாய்ப்பு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            15
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            45
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "15-45 வயது இந்திய இளைஞர்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "கல்விச் சான்று"
+    ],
+    "where_to_apply": "pmkvyofficial.org / அருகிலுள்ள பயிற்சி மையம்",
+    "how_to_apply_steps": [
+      "ஆன்லைன் பதிவு",
+      "பயிற்சி மையம் தேர்வு",
+      "பயிற்சி + மதிப்பீடு"
+    ],
+    "helpline": "1800-123-9626",
+    "source_url": "https://pmkvyofficial.org/",
+    "priority_weight": 6,
+    "tags": [
+      "central",
+      "skill",
+      "youth",
+      "employment"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_DISABILITY_SCHOLARSHIP",
+    "name_ta": "மாற்றுத்திறனாளி மாணவர் உதவித்தொகை (மத்திய)",
+    "name_en": "Central Scholarship for Persons with Disabilities",
+    "ministry": "Ministry of Social Justice & Empowerment",
+    "level": "central",
+    "state": null,
+    "category": "education",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 1500
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "is_disabled"
+            },
+            true
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "student"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            15
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            250000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "40%+ மாற்றுத்திறன் உள்ள மாணவர்கள், குடும்ப வருமானம் 2.5 லட்சத்திற்குக் கீழ்.",
+    "documents_required": [
+      "UDID",
+      "கல்லூரி சேர்க்கை",
+      "வருமானச் சான்று",
+      "ஆதார்"
+    ],
+    "where_to_apply": "scholarships.gov.in",
+    "how_to_apply_steps": [
+      "NSP-ல் ஆன்லைன் விண்ணப்பம்",
+      "ஆவண பதிவேற்றம்"
+    ],
+    "helpline": "0120-6619540",
+    "source_url": "https://scholarships.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "central",
+      "disabled",
+      "student",
+      "education"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_SC_POST_MATRIC",
+    "name_ta": "SC மேல்நிலைக்கு மேலான உதவித்தொகை (மத்திய)",
+    "name_en": "Central Post-Matric Scholarship for SC",
+    "ministry": "Ministry of Social Justice & Empowerment",
+    "level": "central",
+    "state": null,
+    "category": "education",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 1200
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "in": [
+            {
+              "var": "social_category"
+            },
+            [
+              "SC"
+            ]
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "student"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            15
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            250000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "SC சமூக மாணவர்கள், குடும்ப வருமானம் 2.5 லட்சத்திற்குக் கீழ்.",
+    "documents_required": [
+      "சாதிச் சான்றிதழ்",
+      "கல்லூரி சேர்க்கை",
+      "வருமானச் சான்று",
+      "ஆதார்"
+    ],
+    "where_to_apply": "scholarships.gov.in",
+    "how_to_apply_steps": [
+      "NSP-ல் பதிவு",
+      "ஆவண பதிவேற்றம்"
+    ],
+    "helpline": "0120-6619540",
+    "source_url": "https://scholarships.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "central",
+      "sc",
+      "student",
+      "education"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_ST_POST_MATRIC",
+    "name_ta": "ST மேல்நிலைக்கு மேலான உதவித்தொகை (மத்திய)",
+    "name_en": "Central Post-Matric Scholarship for ST",
+    "ministry": "Ministry of Tribal Affairs",
+    "level": "central",
+    "state": null,
+    "category": "education",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 1200
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "in": [
+            {
+              "var": "social_category"
+            },
+            [
+              "ST"
+            ]
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "student"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            15
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            250000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "ST சமூக மாணவர்கள், குடும்ப வருமானம் 2.5 லட்சத்திற்குக் கீழ்.",
+    "documents_required": [
+      "சாதிச் சான்றிதழ்",
+      "கல்லூரி சேர்க்கை",
+      "வருமானச் சான்று",
+      "ஆதார்"
+    ],
+    "where_to_apply": "scholarships.gov.in",
+    "how_to_apply_steps": [
+      "NSP-ல் பதிவு"
+    ],
+    "helpline": "0120-6619540",
+    "source_url": "https://scholarships.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "central",
+      "st",
+      "student",
+      "education"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_OBC_POST_MATRIC",
+    "name_ta": "OBC மேல்நிலைக்கு மேலான உதவித்தொகை (மத்திய)",
+    "name_en": "Central Post-Matric Scholarship for OBC",
+    "ministry": "Ministry of Social Justice & Empowerment",
+    "level": "central",
+    "state": null,
+    "category": "education",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 750
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "in": [
+            {
+              "var": "social_category"
+            },
+            [
+              "OBC"
+            ]
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "student"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            15
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            100000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "OBC சமூக மாணவர்கள், குடும்ப வருமானம் 1 லட்சத்திற்குக் கீழ்.",
+    "documents_required": [
+      "OBC சான்றிதழ்",
+      "கல்லூரி சேர்க்கை",
+      "வருமானச் சான்று",
+      "ஆதார்"
+    ],
+    "where_to_apply": "scholarships.gov.in",
+    "how_to_apply_steps": [
+      "NSP-ல் பதிவு"
+    ],
+    "helpline": "0120-6619540",
+    "source_url": "https://scholarships.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "central",
+      "obc",
+      "student",
+      "education"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_PM_JANAUSHADI",
+    "name_ta": "பிரதான் மந்திரி ஜன ஔஷதி மையம்",
+    "name_en": "PM Bhartiya Janaushadhi Pariyojana (Affordable Medicine)",
+    "ministry": "Ministry of Chemicals & Fertilizers",
+    "level": "central",
+    "state": null,
+    "category": "health",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "50-90% குறைந்த விலையில் மருந்துகள்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            1
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "அனைவருக்கும் திறந்த மையம், மருந்துச் சீட்டு தேவை.",
+    "documents_required": [
+      "மருத்துவரின் மருந்துச் சீட்டு"
+    ],
+    "where_to_apply": "அருகிலுள்ள ஜன ஔஷதி மையம்",
+    "how_to_apply_steps": [
+      "மருந்துச் சீட்டுடன் மையத்தை அணுகவும்"
+    ],
+    "helpline": "1800-180-8080",
+    "source_url": "https://janaushadhi.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "central",
+      "health",
+      "medicine"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_ABHA",
+    "name_ta": "ஆயுஷ்மான் பாரத் சுகாதார கணக்கு (ABHA)",
+    "name_en": "Ayushman Bharat Health Account (ABHA)",
+    "ministry": "Ministry of Health",
+    "level": "central",
+    "state": null,
+    "category": "health",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "14 இலக்க சுகாதார அடையாள எண் + டிஜிட்டல் சுகாதார பதிவு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            1
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "ஆதார் உள்ள அனைத்து இந்தியர்களும்.",
+    "documents_required": [
+      "ஆதார்"
+    ],
+    "where_to_apply": "abha.abdm.gov.in / CSC",
+    "how_to_apply_steps": [
+      "abha.abdm.gov.in-ல் ABHA எண் உருவாக்கம்"
+    ],
+    "helpline": "1800-114-477",
+    "source_url": "https://abha.abdm.gov.in/",
+    "priority_weight": 4,
+    "tags": [
+      "central",
+      "health",
+      "digital"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_PMAY_URBAN",
+    "name_ta": "பிரதான் மந்திரி ஆவாஸ் யோஜனா (நகரம்)",
+    "name_en": "PM Awas Yojana – Urban",
+    "ministry": "Ministry of Housing & Urban Affairs",
+    "level": "central",
+    "state": null,
+    "category": "housing",
+    "benefit": {
+      "kind": "subsidy_pct",
+      "amount": 4,
+      "description_ta": "வீட்டுக் கடன் வட்டியில் 4% மானியம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            21
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            300000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "EWS / LIG, சொந்த வீடு இல்லாத நகர்ப்புற குடும்பங்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "வருமானச் சான்று",
+      "வீடு இல்லை சுய சான்று"
+    ],
+    "where_to_apply": "நகராட்சி / CLSS வங்கி",
+    "how_to_apply_steps": [
+      "pmaymis.gov.in-ல் விண்ணப்பம்",
+      "நகராட்சி சரிபார்ப்பு"
+    ],
+    "helpline": "1800-11-3388",
+    "source_url": "https://pmaymis.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "central",
+      "housing",
+      "urban"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_EHCN_SCHOOL_NUTRITION",
+    "name_ta": "மதிய உணவுத் திட்டம் (PM POSHAN)",
+    "name_en": "PM POSHAN (Mid-Day Meal Scheme)",
+    "ministry": "Ministry of Education",
+    "level": "central",
+    "state": null,
+    "category": "food",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "பள்ளி மாணவர்களுக்கு இலவச மதிய உணவு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            6
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            14
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "student"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "அரசு / நிதியுதவி பள்ளி மாணவர்கள் (1-8 வகுப்பு).",
+    "documents_required": [
+      "பள்ளி சேர்க்கை"
+    ],
+    "where_to_apply": "பள்ளி",
+    "how_to_apply_steps": [
+      "தானாக வழங்கப்படும்"
+    ],
+    "helpline": "1800-11-0001",
+    "source_url": "https://pmposhan.education.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "central",
+      "child",
+      "food",
+      "student"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_DIGITAL_INDIA_INTERNSHIP",
+    "name_ta": "டிஜிட்டல் இந்தியா இன்டர்ன்ஷிப்",
+    "name_en": "Digital India Internship Programme",
+    "ministry": "Ministry of Electronics & IT",
+    "level": "central",
+    "state": null,
+    "category": "employment",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 10000,
+      "description_ta": "மாதம் 10,000 ரூபாய் உதவித்தொகை"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            25
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "student"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "B.Tech / MCA / MSc-IT படிக்கும் மாணவர்கள்.",
+    "documents_required": [
+      "கல்லூரி அடையாள அட்டை",
+      "ஆதார்"
+    ],
+    "where_to_apply": "digitalindia.gov.in",
+    "how_to_apply_steps": [
+      "ஆன்லைன் விண்ணப்பம்"
+    ],
+    "helpline": "1800-111-363",
+    "source_url": "https://digitalindia.gov.in/",
+    "priority_weight": 4,
+    "tags": [
+      "central",
+      "youth",
+      "employment",
+      "digital"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_PM_SURYA_GHAR",
+    "name_ta": "பிரதான் மந்திரி சூர்ய கர் முப்த் பிஜ்லி யோஜனா",
+    "name_en": "PM Surya Ghar Muft Bijli Yojana (Rooftop Solar)",
+    "ministry": "Ministry of New & Renewable Energy",
+    "level": "central",
+    "state": null,
+    "category": "subsidy",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 78000,
+      "description_ta": "கூரை சூரிய மின் அமைப்பிற்கு 78,000 வரை மானியம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "சொந்த வீடு உள்ள குடும்பங்கள், மின் இணைப்பு உள்ளவர்.",
+    "documents_required": [
+      "ஆதார்",
+      "மின் இணைப்பு விவரம்",
+      "வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "pmsuryaghar.gov.in",
+    "how_to_apply_steps": [
+      "pmsuryaghar.gov.in-ல் பதிவு",
+      "நிறுவனம் தேர்வு",
+      "நிறுவல் + மானியம்"
+    ],
+    "helpline": "1800-180-3333",
+    "source_url": "https://pmsuryaghar.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "central",
+      "solar",
+      "subsidy"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_NRLM",
+    "name_ta": "தேசிய கிராமப்புற வாழ்வாதார மிஷன் (NRLM)",
+    "name_en": "National Rural Livelihood Mission (DAY-NRLM)",
+    "ministry": "Ministry of Rural Development",
+    "level": "central",
+    "state": null,
+    "category": "livelihood",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 15000,
+      "description_ta": "SHG குழுவிற்கு சுழல் நிதி + வங்கி இணைப்பு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            200000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "கிராமப்புற வறிய பெண்கள், SHG வழியாக.",
+    "documents_required": [
+      "ஆதார்",
+      "குடும்ப அட்டை"
+    ],
+    "where_to_apply": "கிராம ஊராட்சி / BDO",
+    "how_to_apply_steps": [
+      "SHG குழுவில் சேர்க்கை",
+      "குழு சுழல் நிதி"
+    ],
+    "helpline": "1800-345-3222",
+    "source_url": "https://nrlm.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "central",
+      "rural",
+      "livelihood",
+      "woman"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_FREE_LPG_REFILL",
+    "name_ta": "உஜ்வலா இலவச சிலிண்டர் நிரப்பு",
+    "name_en": "Ujjwala Free LPG Refill (Annual)",
+    "ministry": "Ministry of Petroleum",
+    "level": "central",
+    "state": null,
+    "category": "subsidy",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 1600,
+      "description_ta": "வருடத்திற்கு 12 இலவச LPG சிலிண்டர் நிரப்பு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            120000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "உஜ்வலா பயனாளி பெண்கள்.",
+    "documents_required": [
+      "உஜ்வலா LPG இணைப்பு எண்",
+      "ஆதார்"
+    ],
+    "where_to_apply": "LPG விநியோகஸ்தர்",
+    "how_to_apply_steps": [
+      "LPG டீலரிடம் நிரப்பு கோரிக்கை"
+    ],
+    "helpline": "1906",
+    "source_url": "https://www.pmuy.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "central",
+      "woman",
+      "fuel"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_DDUGKY",
+    "name_ta": "தீன் தயாள் உபாத்யாய கிராமீண கூசல்யா யோஜனா",
+    "name_en": "DDU-GKY (Rural Youth Skill & Placement)",
+    "ministry": "Ministry of Rural Development",
+    "level": "central",
+    "state": null,
+    "category": "employment",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "இலவச திறன் பயிற்சி + உத்தரவாத வேலை வாய்ப்பு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            15
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            35
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            200000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "கிராமப்புற வறிய குடும்பத்தின் 15-35 வயது இளைஞர்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "குடும்ப அட்டை"
+    ],
+    "where_to_apply": "ddugky.gov.in / BDO",
+    "how_to_apply_steps": [
+      "ddugky.gov.in-ல் பதிவு",
+      "பயிற்சி மையம் தேர்வு"
+    ],
+    "helpline": "1800-345-3222",
+    "source_url": "https://ddugky.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "central",
+      "skill",
+      "rural",
+      "youth"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_PM_WANI",
+    "name_ta": "பிரதான் மந்திரி வை-ஃபை அணுகல் நெட்வொர்க் (PM-WANI)",
+    "name_en": "PM-WANI (Public WiFi Access)",
+    "ministry": "Ministry of Communications",
+    "level": "central",
+    "state": null,
+    "category": "subsidy",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "கிராமப்புற பகுதிகளில் குறைந்த விலை / இலவச வை-ஃபை"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            1
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "அனைத்து குடிமக்களுக்கும் பொது வை-ஃபை.",
+    "documents_required": [],
+    "where_to_apply": "அருகிலுள்ள PM-WANI ஹாட்ஸ்பாட்",
+    "how_to_apply_steps": [
+      "PM-WANI ஹாட்ஸ்பாட்டை இணைத்து பயன்படுத்தவும்"
+    ],
+    "helpline": "1800-11-0001",
+    "source_url": "https://dot.gov.in/",
+    "priority_weight": 3,
+    "tags": [
+      "central",
+      "digital",
+      "wifi"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_PM_KUSUM",
+    "name_ta": "பிரதான் மந்திரி குசும் திட்டம்",
+    "name_en": "PM-KUSUM (Solar Pump for Farmers)",
+    "ministry": "Ministry of New & Renewable Energy",
+    "level": "central",
+    "state": null,
+    "category": "agriculture",
+    "benefit": {
+      "kind": "subsidy_pct",
+      "amount": 60,
+      "description_ta": "சூரிய மின் பம்ப் செட்டிற்கு 60% மானியம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "farmer"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "விவசாயிகள், சொந்த நிலம் உள்ளவர்.",
+    "documents_required": [
+      "பட்டா",
+      "ஆதார்",
+      "வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "mnre.gov.in / வேளாண் துறை",
+    "how_to_apply_steps": [
+      "mnre.gov.in-ல் பதிவு",
+      "மாவட்ட அலுவலகத்தில் விண்ணப்பம்"
+    ],
+    "helpline": "1800-180-3333",
+    "source_url": "https://mnre.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "central",
+      "farmer",
+      "solar",
+      "agriculture"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_KISAN_CREDIT_CARD",
+    "name_ta": "கிசான் கிரெடிட் கார்டு (KCC)",
+    "name_en": "Kisan Credit Card (KCC)",
+    "ministry": "Ministry of Agriculture",
+    "level": "central",
+    "state": null,
+    "category": "loan",
+    "benefit": {
+      "kind": "loan",
+      "amount": 300000,
+      "description_ta": "விவசாயக் கடன் 3 லட்சம் வரை (4% வட்டி)"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "farmer"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "அனைத்து விவசாயிகள், குத்தகை விவசாயிகள் உட்பட.",
+    "documents_required": [
+      "பட்டா / குத்தகை சான்று",
+      "ஆதார்",
+      "வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "எந்த வங்கியும் / PACS",
+    "how_to_apply_steps": [
+      "வங்கியில் KCC விண்ணப்பம்"
+    ],
+    "helpline": "155261",
+    "source_url": "https://pmkisan.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "central",
+      "farmer",
+      "loan",
+      "kcc"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_PM_MATSYA",
+    "name_ta": "பிரதான் மந்திரி மத்ஸ்ய சம்பத யோஜனா",
+    "name_en": "PM Matsya Sampada Yojana (Fisheries Development)",
+    "ministry": "Ministry of Fisheries",
+    "level": "central",
+    "state": null,
+    "category": "agriculture",
+    "benefit": {
+      "kind": "subsidy_pct",
+      "amount": 40,
+      "description_ta": "மீன்வளத் தொழிலுக்கு 40% மானியம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "fisher"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "மீனவர்கள், மீன் வளர்ப்பு தொழில்முனைவர்கள்.",
+    "documents_required": [
+      "மீனவர் அடையாள அட்டை",
+      "ஆதார்",
+      "வணிகத் திட்டம்"
+    ],
+    "where_to_apply": "மீன்வளத் துறை",
+    "how_to_apply_steps": [
+      "மீன்வளத் துறையில் விண்ணப்பம்"
+    ],
+    "helpline": "1800-425-1660",
+    "source_url": "https://pmmsy.dof.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "central",
+      "fisher",
+      "agriculture"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_NATIONAL_CRECHE",
+    "name_ta": "தேசிய குழந்தை பராமரிப்பு மையம்",
+    "name_en": "National Creche Scheme",
+    "ministry": "Ministry of Women & Child Development",
+    "level": "central",
+    "state": null,
+    "category": "social_security",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "வேலை செய்யும் தாய்மார்களின் குழந்தைகளுக்கு இலவச பகல் பராமரிப்பு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            120000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "வேலை செய்யும் வறிய பெண்களின் 6 மாதம் - 6 வயது குழந்தைகள்.",
+    "documents_required": [
+      "தாயின் ஆதார்",
+      "குழந்தையின் பிறப்புச் சான்று"
+    ],
+    "where_to_apply": "ICDS / அங்கன்வாடி",
+    "how_to_apply_steps": [
+      "அருகிலுள்ள குழந்தை பராமரிப்பு மையத்தில் பதிவு"
+    ],
+    "helpline": "1098",
+    "source_url": "https://wcd.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "central",
+      "woman",
+      "child"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_SAUBHAGYA",
+    "name_ta": "சௌபாக்கியா திட்டம் (இலவச மின் இணைப்பு)",
+    "name_en": "Saubhagya (Free Electricity Connection for BPL)",
+    "ministry": "Ministry of Power",
+    "level": "central",
+    "state": null,
+    "category": "subsidy",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "BPL குடும்பங்களுக்கு இலவச மின் இணைப்பு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            120000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "மின் இணைப்பு இல்லாத BPL குடும்பங்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "குடும்ப அட்டை"
+    ],
+    "where_to_apply": "DISCOM / TNEB",
+    "how_to_apply_steps": [
+      "TNEB அலுவலகத்தில் விண்ணப்பம்"
+    ],
+    "helpline": "1912",
+    "source_url": "https://saubhagya.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "central",
+      "electricity",
+      "subsidy"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_SWACHH_BHARAT_TOILET",
+    "name_ta": "சுவச்சா பாரத் (இலவச கழிப்பறை)",
+    "name_en": "Swachh Bharat Mission - Gramin (Toilet Subsidy)",
+    "ministry": "Ministry of Jal Shakti",
+    "level": "central",
+    "state": null,
+    "category": "subsidy",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 12000,
+      "description_ta": "கழிப்பறை கட்ட 12,000 ரூபாய்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            200000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "கழிப்பறை இல்லாத கிராமப்புற BPL குடும்பங்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "குடும்ப அட்டை"
+    ],
+    "where_to_apply": "கிராம ஊராட்சி",
+    "how_to_apply_steps": [
+      "கிராம ஊராட்சியில் விண்ணப்பம்"
+    ],
+    "helpline": "1800-11-4950",
+    "source_url": "https://sbm.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "central",
+      "sanitation",
+      "rural"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_JJM_TAP_WATER",
+    "name_ta": "ஜல் ஜீவன் மிஷன் (குழாய் நீர்)",
+    "name_en": "Jal Jeevan Mission (Tap Water to Every Home)",
+    "ministry": "Ministry of Jal Shakti",
+    "level": "central",
+    "state": null,
+    "category": "subsidy",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "ஒவ்வொரு வீட்டிற்கும் குழாய் நீர் இணைப்பு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "குழாய் நீர் இணைப்பு இல்லாத அனைத்து கிராமப்புற வீடுகள்.",
+    "documents_required": [
+      "ஆதார்",
+      "குடும்ப அட்டை"
+    ],
+    "where_to_apply": "கிராம ஊராட்சி",
+    "how_to_apply_steps": [
+      "கிராம ஊராட்சியில் விண்ணப்பம்"
+    ],
+    "helpline": "1800-11-4950",
+    "source_url": "https://jaljeevanmission.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "central",
+      "water",
+      "rural"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_AGNIPATH",
+    "name_ta": "அக்னிபத் ராணுவ சேர்க்கை",
+    "name_en": "Agnipath Scheme (Short-term Military Service)",
+    "ministry": "Ministry of Defence",
+    "level": "central",
+    "state": null,
+    "category": "employment",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 30000,
+      "description_ta": "4 ஆண்டு ராணுவ சேவை + 11.71 லட்ச Seva Nidhi"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            17
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            23
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "17.5-23 வயது இந்திய குடிமக்கள், 10-12 வகுப்பு படித்தவர்.",
+    "documents_required": [
+      "ஆதார்",
+      "கல்விச் சான்று",
+      "உடல்தகுதி சான்று"
+    ],
+    "where_to_apply": "joinindianarmy.nic.in",
+    "how_to_apply_steps": [
+      "ஆன்லைன் பதிவு",
+      "ரேலி / ஆட்சேர்ப்பு முகாம்"
+    ],
+    "helpline": "011-2609-2419",
+    "source_url": "https://joinindianarmy.nic.in/",
+    "priority_weight": 5,
+    "tags": [
+      "central",
+      "youth",
+      "employment",
+      "military"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_ECBC_SC_ST_GIRL_HOSTEL",
+    "name_ta": "SC/ST மாணவியர் விடுதி",
+    "name_en": "Babu Jagjivan Ram Chhatrawas Yojana (SC/ST Girls Hostel)",
+    "ministry": "Ministry of Social Justice",
+    "level": "central",
+    "state": null,
+    "category": "education",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "SC/ST பெண் மாணவர்களுக்கு இலவச விடுதி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          "in": [
+            {
+              "var": "social_category"
+            },
+            [
+              "SC",
+              "ST"
+            ]
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "student"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            14
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "SC/ST சமூக பெண் மாணவர்கள்.",
+    "documents_required": [
+      "சாதிச் சான்றிதழ்",
+      "கல்லூரி சேர்க்கை",
+      "ஆதார்"
+    ],
+    "where_to_apply": "கல்லூரி / மாவட்ட சமூகநல அலுவலகம்",
+    "how_to_apply_steps": [
+      "கல்லூரி மூலம் விண்ணப்பம்"
+    ],
+    "helpline": "011-2338-4520",
+    "source_url": "https://socialjustice.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "central",
+      "sc",
+      "st",
+      "woman",
+      "student",
+      "hostel"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_NISHTHA_TEACHER",
+    "name_ta": "நிஷ்டா ஆசிரியர் பயிற்சி",
+    "name_en": "NISHTHA (National Initiative for School Heads' & Teachers' Training)",
+    "ministry": "Ministry of Education",
+    "level": "central",
+    "state": null,
+    "category": "education",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "ஆசிரியர்களுக்கு இலவச தொழிற்திறன் மேம்பாட்டு பயிற்சி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            21
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            60
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "அரசு / நிதியுதவி பள்ளி ஆசிரியர்கள்.",
+    "documents_required": [
+      "ஆசிரியர் அடையாள அட்டை"
+    ],
+    "where_to_apply": "diksha.gov.in",
+    "how_to_apply_steps": [
+      "diksha.gov.in-ல் பதிவு"
+    ],
+    "helpline": "1800-11-0001",
+    "source_url": "https://diksha.gov.in/",
+    "priority_weight": 3,
+    "tags": [
+      "central",
+      "education",
+      "teacher"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_PMEGP",
+    "name_ta": "பிரதான் மந்திரி வேலைவாய்ப்பு உருவாக்க திட்டம் (PMEGP)",
+    "name_en": "PM Employment Generation Programme (PMEGP)",
+    "ministry": "Ministry of MSME",
+    "level": "central",
+    "state": null,
+    "category": "loan",
+    "benefit": {
+      "kind": "subsidy_pct",
+      "amount": 35,
+      "description_ta": "புதிய தொழில் கடனில் 25-35% மானியம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "18+ வயது, புதிய உற்பத்தி / சேவை தொழில் தொடங்க விரும்புபவர்.",
+    "documents_required": [
+      "ஆதார்",
+      "வணிகத் திட்டம்",
+      "கல்விச் சான்று"
+    ],
+    "where_to_apply": "kviconline.gov.in / KVIC / DIC",
+    "how_to_apply_steps": [
+      "kviconline.gov.in-ல் பதிவு",
+      "DIC / KVIC சரிபார்ப்பு",
+      "வங்கி கடன்"
+    ],
+    "helpline": "1800-3000-0034",
+    "source_url": "https://www.kviconline.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "central",
+      "loan",
+      "employment",
+      "msme"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_SAMAGRA_SHIKSHA",
+    "name_ta": "சமக்ரா சிக்ஷா (ஒருங்கிணைந்த கல்வி)",
+    "name_en": "Samagra Shiksha (Integrated School Education)",
+    "ministry": "Ministry of Education",
+    "level": "central",
+    "state": null,
+    "category": "education",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "இலவச பள்ளிக் கல்வி + கற்றல் உபகரணங்கள்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            6
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "student"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "6-18 வயது அரசு பள்ளி மாணவர்கள்.",
+    "documents_required": [
+      "பள்ளி அடையாள அட்டை"
+    ],
+    "where_to_apply": "பள்ளி",
+    "how_to_apply_steps": [
+      "பள்ளி மூலம் தானாக வழங்கப்படும்"
+    ],
+    "helpline": "1800-11-0001",
+    "source_url": "https://samagra.education.gov.in/",
+    "priority_weight": 4,
+    "tags": [
+      "central",
+      "education",
+      "child"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_CM_BREAKFAST",
+    "name_ta": "முதலமைச்சர் காலை உணவுத் திட்டம்",
+    "name_en": "TN CM Breakfast Scheme for Primary Students",
+    "ministry": "TN Social Welfare",
+    "level": "state",
+    "state": "TN",
+    "category": "food",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "1-5 வகுப்பு மாணவர்களுக்கு இலவச காலை உணவு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            5
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            12
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "student"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "அரசு பள்ளி 1-5 வகுப்பு மாணவர்கள்.",
+    "documents_required": [
+      "பள்ளி அடையாள அட்டை"
+    ],
+    "where_to_apply": "பள்ளி",
+    "how_to_apply_steps": [
+      "பள்ளியில் தானாக வழங்கப்படும்"
+    ],
+    "helpline": "1800-425-5500",
+    "source_url": "https://middaymeals.tn.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "child",
+      "food",
+      "education"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_POULTRY_SUBSIDY",
+    "name_ta": "கோழி வளர்ப்பு மானியம்",
+    "name_en": "TN Poultry Farming Subsidy",
+    "ministry": "TN Animal Husbandry",
+    "level": "state",
+    "state": "TN",
+    "category": "agriculture",
+    "benefit": {
+      "kind": "subsidy_pct",
+      "amount": 50,
+      "description_ta": "கோழிப்பண்ணை அமைக்க 50% மானியம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            300000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "கோழி வளர்ப்பு தொடங்க விரும்பும் கிராமப்புற குடிமக்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "நிலச் சான்று",
+      "வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "கால்நடை மருத்துவ அலுவலகம்",
+    "how_to_apply_steps": [
+      "கால்நடை துறையில் விண்ணப்பம்"
+    ],
+    "helpline": "1800-425-1556",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 4,
+    "tags": [
+      "farmer",
+      "livestock",
+      "subsidy"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_DAIRY_COOPERATIVE",
+    "name_ta": "கூட்டுறவு பால் பண்ணை மானியம்",
+    "name_en": "TN Dairy Development Cooperative Subsidy",
+    "ministry": "TN Dairy Development",
+    "level": "state",
+    "state": "TN",
+    "category": "agriculture",
+    "benefit": {
+      "kind": "subsidy_pct",
+      "amount": 50,
+      "description_ta": "பால் பண்ணை அமைக்க 50% மானியம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "farmer"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            300000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "கிராமப்புற விவசாயிகள், பால் கூட்டுறவு சங்க உறுப்பினர்.",
+    "documents_required": [
+      "ஆதார்",
+      "கூட்டுறவு சங்க உறுப்பினர் சான்று"
+    ],
+    "where_to_apply": "மாவட்ட பால் பண்ணை அலுவலகம்",
+    "how_to_apply_steps": [
+      "கூட்டுறவு சங்கத்தில் உறுப்பினர் சேர்க்கை",
+      "விண்ணப்பம்"
+    ],
+    "helpline": "044-2542-1515",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 4,
+    "tags": [
+      "farmer",
+      "dairy",
+      "subsidy"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_ILAIGNAR_ARAN",
+    "name_ta": "இளைஞர் அரண் திட்டம்",
+    "name_en": "TN Youth Guard (Ilaignar Aran) Scheme",
+    "ministry": "TN Youth Welfare & Sports",
+    "level": "state",
+    "state": "TN",
+    "category": "employment",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 2000,
+      "description_ta": "பயிற்சிக் காலத்தில் மாத உதவித்தொகை"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            25
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "18-25 வயது இளைஞர்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "கல்விச் சான்று",
+      "வயதுச் சான்று"
+    ],
+    "where_to_apply": "மாவட்ட இளைஞர் நல அலுவலகம்",
+    "how_to_apply_steps": [
+      "மாவட்ட அலுவலகத்தில் விண்ணப்பம்"
+    ],
+    "helpline": "044-2567-1515",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 4,
+    "tags": [
+      "youth",
+      "employment"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_EMERGENCY_HEALTH_LINE",
+    "name_ta": "108 அவசர மருத்துவ சேவை",
+    "name_en": "TN 108 Emergency Ambulance Service",
+    "ministry": "TN Health",
+    "level": "state",
+    "state": "TN",
+    "category": "health",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "இலவச அவசர ஆம்புலன்ஸ் சேவை"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "தமிழ்நாட்டில் வசிக்கும் அனைவருக்கும்.",
+    "documents_required": [],
+    "where_to_apply": "108 என்ற எண்ணை அழைக்கவும்",
+    "how_to_apply_steps": [
+      "108 அழைத்தால் ஆம்புலன்ஸ் வரும்"
+    ],
+    "helpline": "108",
+    "source_url": "https://www.tnhealth.tn.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "health",
+      "emergency"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_ANNA_MARUNDAGAM",
+    "name_ta": "அன்னா மருந்தகம் (குறைந்த விலை மருந்து)",
+    "name_en": "TN Anna Marundagam (Affordable Medicine Store)",
+    "ministry": "TN Health",
+    "level": "state",
+    "state": "TN",
+    "category": "health",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "மருந்துகள் சந்தை விலையில் 30-50% குறைவான விலையில்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "அனைவருக்கும் திறந்த கடை.",
+    "documents_required": [
+      "மருத்துவரின் மருந்துச் சீட்டு"
+    ],
+    "where_to_apply": "அருகிலுள்ள அன்னா மருந்தகம்",
+    "how_to_apply_steps": [
+      "மருந்துச் சீட்டுடன் கடையை அணுகவும்"
+    ],
+    "helpline": "104",
+    "source_url": "https://www.tnhealth.tn.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "health",
+      "medicine"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_ORGANIC_FARMING",
+    "name_ta": "இயற்கை விவசாய மானியம்",
+    "name_en": "TN Organic Farming Subsidy",
+    "ministry": "TN Agriculture",
+    "level": "state",
+    "state": "TN",
+    "category": "agriculture",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 10000,
+      "description_ta": "இயற்கை விவசாயம் செய்ய ஹெக்டருக்கு 10,000 ரூபாய் உதவி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "farmer"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "இயற்கை விவசாயம் செய்ய விரும்பும் விவசாயிகள்.",
+    "documents_required": [
+      "பட்டா",
+      "ஆதார்"
+    ],
+    "where_to_apply": "வேளாண் துறை",
+    "how_to_apply_steps": [
+      "வேளாண் அலுவலகத்தில் விண்ணப்பம்"
+    ],
+    "helpline": "1800-425-1556",
+    "source_url": "https://www.tnagrisnet.tn.gov.in/",
+    "priority_weight": 4,
+    "tags": [
+      "farmer",
+      "organic",
+      "agriculture"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_AMMA_UNAVAGAM",
+    "name_ta": "அம்மா உணவகம் (Amma Canteen)",
+    "name_en": "TN Amma Unavagam (Subsidized Canteen)",
+    "ministry": "TN Municipal Administration",
+    "level": "state",
+    "state": "TN",
+    "category": "food",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "1-7 ரூபாய்க்கு உணவு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "அனைவருக்கும் திறந்தது.",
+    "documents_required": [],
+    "where_to_apply": "அருகிலுள்ள அம்மா உணவகம்",
+    "how_to_apply_steps": [
+      "அம்மா உணவகத்தில் நேரடியாக சாப்பிடலாம்"
+    ],
+    "helpline": "044-2534-0000",
+    "source_url": "https://www.chennaicorporation.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "food",
+      "subsidized"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_WOMEN_HOSTEL",
+    "name_ta": "வேலை செய்யும் பெண்களுக்கு விடுதி",
+    "name_en": "TN Working Women Hostel",
+    "ministry": "TN Social Welfare",
+    "level": "state",
+    "state": "TN",
+    "category": "social_security",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "குறைந்த வாடகையில் பாதுகாப்பான விடுதி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            40
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            300000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "18-40 வயது வேலை செய்யும் பெண்கள், வருமானம் 3 லட்சத்திற்குக் கீழ்.",
+    "documents_required": [
+      "ஆதார்",
+      "வேலைச் சான்று",
+      "வருமானச் சான்று"
+    ],
+    "where_to_apply": "மாவட்ட சமூகநல அலுவலகம்",
+    "how_to_apply_steps": [
+      "அலுவலகத்தில் விண்ணப்பம்"
+    ],
+    "helpline": "1800-425-1515",
+    "source_url": "https://www.tnsocialwelfare.tn.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "woman",
+      "hostel"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_CRADLE_BABY",
+    "name_ta": "தொட்டில் குழந்தை திட்டம்",
+    "name_en": "TN Cradle Baby Scheme",
+    "ministry": "TN Social Defence",
+    "level": "state",
+    "state": "TN",
+    "category": "social_security",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "கைவிடப்பட்ட குழந்தைகளை பாதுகாப்பாக ஒப்படைக்க தொட்டில்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "அனைத்து பெற்றோர்.",
+    "documents_required": [],
+    "where_to_apply": "அரசு மருத்துவமனை",
+    "how_to_apply_steps": [
+      "அரசு மருத்துவமனையில் தொட்டிலில் குழந்தையை வைக்கலாம்"
+    ],
+    "helpline": "1098",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 4,
+    "tags": [
+      "child",
+      "social_security"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_HANDICRAFT_MARKETING",
+    "name_ta": "கைவினைப் பொருட்கள் சந்தைப்படுத்துதல் உதவி",
+    "name_en": "TN Handicrafts Marketing Assistance",
+    "ministry": "TN Handlooms & Textiles",
+    "level": "state",
+    "state": "TN",
+    "category": "livelihood",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 20000,
+      "description_ta": "கண்காட்சி/சந்தைப்படுத்துதல் உதவி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "weaver"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "பதிவு செய்த கைவினைஞர்கள் / நெசவாளர்கள்.",
+    "documents_required": [
+      "நெசவாளர் / கைவினைஞர் அடையாள அட்டை",
+      "ஆதார்"
+    ],
+    "where_to_apply": "கைத்தறித் துறை",
+    "how_to_apply_steps": [
+      "அலுவலகத்தில் விண்ணப்பம்"
+    ],
+    "helpline": "044-2432-1515",
+    "source_url": "https://handlooms.tn.gov.in/",
+    "priority_weight": 4,
+    "tags": [
+      "weaver",
+      "handicraft",
+      "marketing"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_PM_SVANIDHI_DIGITAL",
+    "name_ta": "பிரதான் மந்திரி ஸ்வநிதி டிஜிட்டல் பரிவர்த்தனை ஊக்கம்",
+    "name_en": "PM SVANidhi Digital Incentive",
+    "ministry": "Ministry of Housing & Urban Affairs",
+    "level": "central",
+    "state": null,
+    "category": "grant",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 1200,
+      "description_ta": "டிஜிட்டல் பரிவர்த்தனை செய்யும் வியாபாரிகளுக்கு வருடம் 1200 ரூபாய் ஊக்கத்தொகை"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            200000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "PM SVANidhi கடன் பெற்ற தெருவோர வியாபாரிகள்.",
+    "documents_required": [
+      "SVANidhi கடன் ஆவணம்",
+      "ஆதார்",
+      "UPI தரவு"
+    ],
+    "where_to_apply": "pmsvanidhi.mohua.gov.in",
+    "how_to_apply_steps": [
+      "உங்கள் SVANidhi கணக்கில் டிஜிட்டல் பரிவர்த்தனைகளை செய்யவும்"
+    ],
+    "helpline": "1800-11-2345",
+    "source_url": "https://pmsvanidhi.mohua.gov.in/",
+    "priority_weight": 3,
+    "tags": [
+      "central",
+      "vendor",
+      "digital"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_SHE_PAD",
+    "name_ta": "இலவச சானிடரி பேட் (மாணவிகள்)",
+    "name_en": "Free Sanitary Pad Scheme for Schoolgirls",
+    "ministry": "Ministry of Health",
+    "level": "central",
+    "state": null,
+    "category": "health",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "பள்ளி மாணவிகளுக்கு இலவச சானிடரி நாப்கின்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            10
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "student"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "10-18 வயது அரசு பள்ளி மாணவிகள்.",
+    "documents_required": [
+      "பள்ளி அடையாள அட்டை"
+    ],
+    "where_to_apply": "பள்ளி / PHC",
+    "how_to_apply_steps": [
+      "பள்ளி மூலம் வழங்கப்படும்"
+    ],
+    "helpline": "104",
+    "source_url": "https://www.tnhealth.tn.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "woman",
+      "health",
+      "student"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_LIFE_CERTIFICATE_DIGITAL",
+    "name_ta": "ஜீவன் ப்ரமாண் (டிஜிட்டல் உயிர் சான்றிதழ்)",
+    "name_en": "Jeevan Pramaan (Digital Life Certificate for Pensioners)",
+    "ministry": "Ministry of Electronics & IT",
+    "level": "central",
+    "state": null,
+    "category": "social_security",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "வீட்டிலிருந்தே டிஜிட்டல் உயிர் சான்றிதழ் (ஓய்வூதிய நிறுத்தம் தவிர்ப்பு)"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            58
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "அனைத்து அரசு ஓய்வூதியதாரர்கள்.",
+    "documents_required": [
+      "ஓய்வூதிய எண்",
+      "ஆதார்"
+    ],
+    "where_to_apply": "jeevanpramaan.gov.in / CSC",
+    "how_to_apply_steps": [
+      "jeevanpramaan.gov.in-ல் ஆதார் அடிப்படையில் சான்றிதழ்"
+    ],
+    "helpline": "1800-11-1363",
+    "source_url": "https://jeevanpramaan.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "central",
+      "elderly",
+      "pension",
+      "digital"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_CGHS_WELLNESS",
+    "name_ta": "மத்திய அரசு ஊழியர் சுகாதாரத் திட்டம்",
+    "name_en": "Central Govt Health Scheme (CGHS)",
+    "ministry": "Ministry of Health",
+    "level": "central",
+    "state": null,
+    "category": "health",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "மத்திய அரசு ஊழியர்களுக்கு இலவச மருத்துவம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            80
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "மத்திய அரசு ஊழியர்கள் மற்றும் ஓய்வூதியதாரர்கள்.",
+    "documents_required": [
+      "CGHS அடையாள அட்டை",
+      "ஆதார்"
+    ],
+    "where_to_apply": "CGHS நலவாழ்வு மையம்",
+    "how_to_apply_steps": [
+      "CGHS அட்டை மூலம் சேவை பெறவும்"
+    ],
+    "helpline": "1800-11-0077",
+    "source_url": "https://cghs.nic.in/",
+    "priority_weight": 4,
+    "tags": [
+      "central",
+      "health",
+      "employee"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_RURAL_ROAD",
+    "name_ta": "முதலமைச்சர் கிராமச் சாலை மேம்பாட்டுத் திட்டம்",
+    "name_en": "TN CM Rural Road Development Scheme",
+    "ministry": "TN Highways",
+    "level": "state",
+    "state": "TN",
+    "category": "subsidy",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "கிராமங்களுக்கு அனைத்து வானிலை சாலை"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "500+ மக்கள்தொகை கொண்ட கிராமங்கள்.",
+    "documents_required": [],
+    "where_to_apply": "கிராம ஊராட்சி / BDO",
+    "how_to_apply_steps": [
+      "கிராம சபையில் கோரிக்கை"
+    ],
+    "helpline": "1800-425-1515",
+    "source_url": "https://www.tnrd.gov.in/",
+    "priority_weight": 3,
+    "tags": [
+      "rural",
+      "road",
+      "infrastructure"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_ORPHAN_CARE",
+    "name_ta": "அநாதை குழந்தைகள் பராமரிப்பு",
+    "name_en": "TN Orphan Children Care & Adoption",
+    "ministry": "TN Social Defence",
+    "level": "state",
+    "state": "TN",
+    "category": "social_security",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "அநாதை குழந்தைகளுக்கு இலவச பராமரிப்பு + கல்வி + தங்குமிடம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "18 வயதுக்குட்பட்ட அநாதை / கைவிடப்பட்ட குழந்தைகள்.",
+    "documents_required": [
+      "அநாதை சான்று / FIR"
+    ],
+    "where_to_apply": "மாவட்ட குழந்தை நல குழு (CWC)",
+    "how_to_apply_steps": [
+      "1098 ஐ அழைக்கவும் / CWC-ஐ அணுகவும்"
+    ],
+    "helpline": "1098",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "child",
+      "orphan",
+      "social_security"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_RAIN_WATER_HARVESTING",
+    "name_ta": "மழைநீர் சேகரிப்பு மானியம்",
+    "name_en": "TN Rainwater Harvesting Subsidy",
+    "ministry": "TN Municipal Administration",
+    "level": "state",
+    "state": "TN",
+    "category": "subsidy",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 5000,
+      "description_ta": "மழைநீர் சேகரிப்பு அமைக்க மானியம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "சொந்த வீடு உள்ளவர்கள், மழைநீர் சேகரிப்பு இல்லாத வீடுகள்.",
+    "documents_required": [
+      "வீடு உரிமை சான்று",
+      "ஆதார்"
+    ],
+    "where_to_apply": "நகராட்சி / ஊராட்சி",
+    "how_to_apply_steps": [
+      "உள்ளாட்சி அலுவலகத்தில் விண்ணப்பம்"
+    ],
+    "helpline": "044-2538-1515",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 3,
+    "tags": [
+      "water",
+      "subsidy"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_SPORTS_SCHOLARSHIP",
+    "name_ta": "விளையாட்டு உதவித்தொகை",
+    "name_en": "TN Sports Scholarship & Prize Money",
+    "ministry": "TN Youth Welfare & Sports",
+    "level": "state",
+    "state": "TN",
+    "category": "grant",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 50000,
+      "description_ta": "மாநில/தேசிய நிலை விளையாட்டு வீரர்களுக்கு பணப் பரிசு + உதவித்தொகை"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            10
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            35
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "மாநில/தேசிய போட்டிகளில் பங்கேற்ற விளையாட்டு வீரர்கள்.",
+    "documents_required": [
+      "விளையாட்டு சான்றிதழ்",
+      "ஆதார்"
+    ],
+    "where_to_apply": "மாவட்ட விளையாட்டு அதிகாரி",
+    "how_to_apply_steps": [
+      "மாவட்ட விளையாட்டு அலுவலகத்தில் விண்ணப்பம்"
+    ],
+    "helpline": "044-2567-1515",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 4,
+    "tags": [
+      "youth",
+      "sports",
+      "grant"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_VOCATIONAL_TRAINING",
+    "name_ta": "தொழிற்பயிற்சி நிலையம் (ITI) இலவச பயிற்சி",
+    "name_en": "TN Industrial Training Institute (ITI) Free Training",
+    "ministry": "TN Employment & Training",
+    "level": "state",
+    "state": "TN",
+    "category": "education",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "இலவச தொழிற்பயிற்சி + கருவிகள் + சான்றிதழ்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            14
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            25
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "8/10 வகுப்பு தேர்ச்சி, 14-25 வயது.",
+    "documents_required": [
+      "கல்விச் சான்று",
+      "ஆதார்"
+    ],
+    "where_to_apply": "அருகிலுள்ள ITI",
+    "how_to_apply_steps": [
+      "ஆன்லைன் சேர்க்கை விண்ணப்பம்"
+    ],
+    "helpline": "044-2432-1424",
+    "source_url": "https://www.tnvelaivaaippu.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "youth",
+      "education",
+      "skill"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_MUDRA_SHISHU",
+    "name_ta": "முத்ரா சிஷு கடன் (50,000 வரை)",
+    "name_en": "MUDRA Shishu Loan (up to ₹50,000)",
+    "ministry": "Ministry of Finance",
+    "level": "central",
+    "state": null,
+    "category": "loan",
+    "benefit": {
+      "kind": "loan",
+      "amount": 50000,
+      "description_ta": "மிகச் சிறிய வணிகத்திற்கு 50,000 வரை கடன்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            200000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "18+ வயது, சிறு வணிகம் செய்பவர், புதிதாக தொடங்குபவர்.",
+    "documents_required": [
+      "ஆதார்",
+      "வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "எந்த வங்கியும்",
+    "how_to_apply_steps": [
+      "வங்கியில் விண்ணப்பம்"
+    ],
+    "helpline": "1800-180-1111",
+    "source_url": "https://www.mudra.org.in/",
+    "priority_weight": 5,
+    "tags": [
+      "central",
+      "loan",
+      "micro_business"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_DIGILOCKER",
+    "name_ta": "டிஜிலாக்கர் (மின் ஆவண சேமிப்பு)",
+    "name_en": "DigiLocker (Digital Document Storage)",
+    "ministry": "Ministry of Electronics & IT",
+    "level": "central",
+    "state": null,
+    "category": "social_security",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "அனைத்து சான்றிதழ்களையும் மின்னணு வடிவில் சேமிக்க / பகிர"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            1
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "ஆதார் உள்ள அனைத்து இந்தியர்கள்.",
+    "documents_required": [
+      "ஆதார்"
+    ],
+    "where_to_apply": "digilocker.gov.in / செயலி",
+    "how_to_apply_steps": [
+      "ஆதார் எண்ணுடன் digilocker.gov.in-ல் பதிவு"
+    ],
+    "helpline": "1800-111-363",
+    "source_url": "https://digilocker.gov.in/",
+    "priority_weight": 3,
+    "tags": [
+      "central",
+      "digital",
+      "document"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_ESIC",
+    "name_ta": "ஊழியர் மாநில காப்பீட்டுக் கழகம் (ESIC)",
+    "name_en": "Employees' State Insurance (ESI)",
+    "ministry": "Ministry of Labour & Employment",
+    "level": "central",
+    "state": null,
+    "category": "insurance",
+    "benefit": {
+      "kind": "insurance_cover",
+      "amount": 500000,
+      "description_ta": "மருத்துவ செலவு + விபத்து + மகப்பேறு + வேலையின்மை காப்பீடு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            252000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "மாதம் 21,000 ரூபாய்க்குக் கீழ் சம்பளம் பெறும் ஊழியர்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "நிறுவனச் சான்று",
+      "வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "ESI மருத்துவமனை / esic.gov.in",
+    "how_to_apply_steps": [
+      "தொழிலாளி பதிவு (நிறுவனம் வழியாக)"
+    ],
+    "helpline": "1800-11-2526",
+    "source_url": "https://esic.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "central",
+      "insurance",
+      "employee"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_EPF",
+    "name_ta": "ஊழியர் வருங்கால வைப்பு நிதி (EPF)",
+    "name_en": "Employees' Provident Fund (EPF)",
+    "ministry": "Ministry of Labour & Employment",
+    "level": "central",
+    "state": null,
+    "category": "pension",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 5000,
+      "description_ta": "ஊழியர் + நிறுவன பங்களிப்பு சேமிப்பு + ஓய்வூதியம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            58
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "20+ ஊழியர்கள் உள்ள நிறுவனத்தில் பணிபுரிபவர்.",
+    "documents_required": [
+      "ஆதார்",
+      "UAN",
+      "வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "epfindia.gov.in",
+    "how_to_apply_steps": [
+      "நிறுவனம் வழியாக பதிவு"
+    ],
+    "helpline": "1800-118-005",
+    "source_url": "https://epfindia.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "central",
+      "pension",
+      "employee"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_PM_CARE_ELDERLY",
+    "name_ta": "பிரதான் மந்திரி மூத்தோர் காப்பீடு (PMJJBY 60+)",
+    "name_en": "PM Elderly Healthcare Extension",
+    "ministry": "Ministry of Health",
+    "level": "central",
+    "state": null,
+    "category": "health",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "60+ மூத்த குடிமக்களுக்கு இலவச சுகாதார பரிசோதனை"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            60
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "60 வயதுக்கு மேற்பட்ட அனைத்து மூத்த குடிமக்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "வயதுச் சான்று"
+    ],
+    "where_to_apply": "அருகிலுள்ள Ayushman Arogya Mandir",
+    "how_to_apply_steps": [
+      "PHC / Ayushman Arogya Mandir-ல் சுகாதார பரிசோதனை"
+    ],
+    "helpline": "14555",
+    "source_url": "https://ab-hwc.nhp.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "central",
+      "elderly",
+      "health"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_DISABILITY_UDID",
+    "name_ta": "UDID — தனித்துவ மாற்றுத்திறன் அடையாள அட்டை",
+    "name_en": "Unique Disability ID Card (UDID)",
+    "ministry": "Ministry of Social Justice & Empowerment",
+    "level": "central",
+    "state": null,
+    "category": "social_security",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "அனைத்து மாற்றுத்திறன் நலத்திட்டங்களுக்கு ஒரே அடையாள அட்டை"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "is_disabled"
+            },
+            true
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "40% அல்லது அதற்கு மேல் மாற்றுத்திறன் உள்ளவர்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "மருத்துவக் குழு சான்றிதழ்"
+    ],
+    "where_to_apply": "swavlambancard.gov.in / மாவட்ட மருத்துவமனை",
+    "how_to_apply_steps": [
+      "swavlambancard.gov.in-ல் ஆன்லைன் பதிவு",
+      "மருத்துவ பரிசோதனை"
+    ],
+    "helpline": "1800-599-0008",
+    "source_url": "https://www.swavlambancard.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "central",
+      "disabled",
+      "identity"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_SUGAMYA",
+    "name_ta": "சுகம்யா பாரத் (அணுகல் வசதி)",
+    "name_en": "Sugamya Bharat Abhiyaan (Accessible India)",
+    "ministry": "Ministry of Social Justice & Empowerment",
+    "level": "central",
+    "state": null,
+    "category": "social_security",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "பொது கட்டிடங்கள் மாற்றுத்திறனாளிகளுக்கு அணுகக்கூடியதாக"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "is_disabled"
+            },
+            true
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "அனைத்து மாற்றுத்திறனாளிகள்.",
+    "documents_required": [
+      "UDID"
+    ],
+    "where_to_apply": "accessibleindia.gov.in",
+    "how_to_apply_steps": [
+      "accessibleindia.gov.in-ல் புகார் பதிவு"
+    ],
+    "helpline": "1800-599-0008",
+    "source_url": "https://accessibleindia.gov.in/",
+    "priority_weight": 3,
+    "tags": [
+      "central",
+      "disabled",
+      "accessibility"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_NISHCHAY",
+    "name_ta": "பிரதான் மந்திரி பெயிண்ட் மை ஹவுஸ்",
+    "name_en": "PM Free LPG Gas Stove Scheme (PMUY Extension)",
+    "ministry": "Ministry of Petroleum",
+    "level": "central",
+    "state": null,
+    "category": "subsidy",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "BPL பெண்களுக்கு இலவச LPG அடுப்பு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            120000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "BPL பெண்கள், LPG இணைப்பு இல்லாதவர்.",
+    "documents_required": [
+      "ஆதார்",
+      "குடும்ப அட்டை"
+    ],
+    "where_to_apply": "LPG விநியோகஸ்தர்",
+    "how_to_apply_steps": [
+      "LPG டீலரிடம் விண்ணப்பம்"
+    ],
+    "helpline": "1906",
+    "source_url": "https://www.pmuy.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "central",
+      "woman",
+      "fuel",
+      "subsidy"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_MAHILA_SHAKTI",
+    "name_ta": "மகிளா சக்தி கேந்திரா",
+    "name_en": "Mahila Shakti Kendra (Women Empowerment Hub)",
+    "ministry": "Ministry of Women & Child Development",
+    "level": "central",
+    "state": null,
+    "category": "social_security",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "பெண்கள் திறன் மேம்பாடு + விழிப்புணர்வு + டிஜிட்டல் கல்வி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            15
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "15+ வயது பெண்கள்.",
+    "documents_required": [
+      "ஆதார்"
+    ],
+    "where_to_apply": "அங்கன்வாடி / MSK மையம்",
+    "how_to_apply_steps": [
+      "அருகிலுள்ள MSK மையத்தை அணுகவும்"
+    ],
+    "helpline": "181",
+    "source_url": "https://wcd.gov.in/",
+    "priority_weight": 4,
+    "tags": [
+      "central",
+      "woman",
+      "empowerment"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_PRADHAN_MANTRI_GRAM_SADAK",
+    "name_ta": "பிரதான் மந்திரி கிராமச் சாலை யோஜனா (PMGSY)",
+    "name_en": "PM Gram Sadak Yojana (Rural Road Connectivity)",
+    "ministry": "Ministry of Rural Development",
+    "level": "central",
+    "state": null,
+    "category": "subsidy",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "கிராமங்களுக்கு அனைத்து வானிலை சாலை இணைப்பு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            1
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "250+ மக்கள்தொகை கொண்ட கிராமங்கள்.",
+    "documents_required": [],
+    "where_to_apply": "கிராம ஊராட்சி / BDO",
+    "how_to_apply_steps": [
+      "கிராம சபையில் கோரிக்கை"
+    ],
+    "helpline": "1800-11-6446",
+    "source_url": "https://pmgsy.nic.in/",
+    "priority_weight": 3,
+    "tags": [
+      "central",
+      "rural",
+      "road"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_BPL_DEATH_GRANT",
+    "name_ta": "BPL குடும்ப இறப்பு நிவாரண உதவி",
+    "name_en": "NSAP Annapurna Scheme (Free Grain for Destitute Elderly)",
+    "ministry": "Ministry of Rural Development",
+    "level": "central",
+    "state": null,
+    "category": "food",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "IGNOAPS தகுதி உள்ள ஆனால் பெறாத ஆதரவற்ற முதியோர்க்கு மாதம் 10 கிலோ இலவச தானியம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            65
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            72000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "65+ வயது ஆதரவற்ற முதியோர், ஓய்வூதியம் பெறாதவர்.",
+    "documents_required": [
+      "ஆதார்",
+      "வயதுச் சான்று",
+      "BPL சான்று"
+    ],
+    "where_to_apply": "VAO / BDO",
+    "how_to_apply_steps": [
+      "VAO-விடம் விண்ணப்பம்"
+    ],
+    "helpline": "1800-11-6446",
+    "source_url": "https://nsap.nic.in/",
+    "priority_weight": 6,
+    "tags": [
+      "central",
+      "elderly",
+      "food"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_SILAMBAM_SPORTS",
+    "name_ta": "சிலம்பம் மற்றும் பாரம்பரிய விளையாட்டு ஊக்கத்தொகை",
+    "name_en": "TN Silambam & Traditional Sports Incentive",
+    "ministry": "TN Youth Welfare & Sports",
+    "level": "state",
+    "state": "TN",
+    "category": "grant",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 25000,
+      "description_ta": "பாரம்பரிய விளையாட்டு வீரர்களுக்கு 25,000 ரூபாய் ஊக்கத்தொகை"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            10
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            35
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "10-35 வயது பாரம்பரிய விளையாட்டு வீரர்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "விளையாட்டு சான்றிதழ்"
+    ],
+    "where_to_apply": "மாவட்ட விளையாட்டு அதிகாரி",
+    "how_to_apply_steps": [
+      "மாவட்ட விளையாட்டு அலுவலகத்தில் விண்ணப்பம்"
+    ],
+    "helpline": "044-2567-1515",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 3,
+    "tags": [
+      "youth",
+      "sports"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_GOAT_REARING",
+    "name_ta": "ஆடு வளர்ப்பு மானியம்",
+    "name_en": "TN Goat Rearing Subsidy",
+    "ministry": "TN Animal Husbandry",
+    "level": "state",
+    "state": "TN",
+    "category": "agriculture",
+    "benefit": {
+      "kind": "subsidy_pct",
+      "amount": 50,
+      "description_ta": "ஆடு வளர்ப்பு அலகு அமைக்க 50% மானியம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            300000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "கிராமப்புற 18+ வயதினர், வருமானம் 3 லட்சத்திற்குக் கீழ்.",
+    "documents_required": [
+      "ஆதார்",
+      "நிலச் சான்று",
+      "வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "கால்நடை மருத்துவ அலுவலகம்",
+    "how_to_apply_steps": [
+      "கால்நடை துறையில் விண்ணப்பம்"
+    ],
+    "helpline": "1800-425-1556",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 4,
+    "tags": [
+      "farmer",
+      "livestock"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "TN_COOPERATIVE_LOAN",
+    "name_ta": "கூட்டுறவு விவசாயக் கடன்",
+    "name_en": "TN Cooperative Farm Loan (Interest-Free)",
+    "ministry": "TN Cooperation",
+    "level": "state",
+    "state": "TN",
+    "category": "loan",
+    "benefit": {
+      "kind": "loan",
+      "amount": 300000,
+      "description_ta": "3 லட்சம் வரை வட்டியில்லா விவசாயக் கடன்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "farmer"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "கூட்டுறவு சங்க உறுப்பினர் விவசாயிகள்.",
+    "documents_required": [
+      "பட்டா",
+      "ஆதார்",
+      "கூட்டுறவு உறுப்பினர் சான்று"
+    ],
+    "where_to_apply": "முதன்மை வேளாண் கூட்டுறவு சங்கம் (PACCS)",
+    "how_to_apply_steps": [
+      "PACCS-ல் விண்ணப்பம்"
+    ],
+    "helpline": "044-2535-1515",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "farmer",
+      "loan",
+      "cooperative"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_PM_SHRI_SCHOOL",
+    "name_ta": "பிஎம் ஸ்ரீ பள்ளி (மாதிரிப் பள்ளி)",
+    "name_en": "PM SHRI Schools (Model School Upgradation)",
+    "ministry": "Ministry of Education",
+    "level": "central",
+    "state": null,
+    "category": "education",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "அரசு பள்ளிகளை நவீன மாதிரிப் பள்ளிகளாக மேம்படுத்தல்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            6
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "student"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "PM SHRI பள்ளியில் படிக்கும் மாணவர்கள்.",
+    "documents_required": [
+      "பள்ளி அடையாள அட்டை"
+    ],
+    "where_to_apply": "PM SHRI பள்ளி",
+    "how_to_apply_steps": [
+      "PM SHRI பள்ளியில் சேர்க்கை"
+    ],
+    "helpline": "1800-11-0001",
+    "source_url": "https://www.education.gov.in/",
+    "priority_weight": 4,
+    "tags": [
+      "central",
+      "education",
+      "child"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_PM_INTERNSHIP",
+    "name_ta": "பிரதான் மந்திரி இன்டர்ன்ஷிப் திட்டம்",
+    "name_en": "PM Internship Scheme (Top 500 Companies)",
+    "ministry": "Ministry of Corporate Affairs",
+    "level": "central",
+    "state": null,
+    "category": "employment",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 5000,
+      "description_ta": "மாதம் 5000 ரூபாய் உதவித்தொகை + 6000 ஒரு முறை உதவி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            21
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            24
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "21-24 வயது, IIT/NIT அல்லாத கல்லூரி பட்டதாரிகள்.",
+    "documents_required": [
+      "ஆதார்",
+      "பட்டச் சான்று",
+      "வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "pminternship.mca.gov.in",
+    "how_to_apply_steps": [
+      "ஆன்லைன் பதிவு",
+      "நிறுவனம் தேர்வு"
+    ],
+    "helpline": "1800-11-0001",
+    "source_url": "https://www.mca.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "central",
+      "youth",
+      "employment"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_AYUSHMAN_SENIOR",
+    "name_ta": "ஆயுஷ்மான் பாரத் - 70+ மூத்த குடிமக்கள்",
+    "name_en": "Ayushman Bharat for 70+ Senior Citizens",
+    "ministry": "Ministry of Health",
+    "level": "central",
+    "state": null,
+    "category": "insurance",
+    "benefit": {
+      "kind": "insurance_cover",
+      "amount": 500000,
+      "description_ta": "70+ வயதினருக்கு 5 லட்சம் இலவச சுகாதார காப்பீடு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            70
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "70 வயதுக்கு மேற்பட்ட அனைத்து மூத்த குடிமக்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "வயதுச் சான்று"
+    ],
+    "where_to_apply": "pmjay.gov.in / CSC",
+    "how_to_apply_steps": [
+      "pmjay.gov.in-ல் தகுதி சரிபார்ப்பு",
+      "PMJAY கார்டு பெறவும்"
+    ],
+    "helpline": "14555",
+    "source_url": "https://pmjay.gov.in/",
+    "priority_weight": 9,
+    "tags": [
+      "central",
+      "elderly",
+      "health",
+      "insurance"
+    ],
+    "last_verified_date": "2026-10-01"
+  },
+  {
+    "scheme_id": "CENTRAL_MSME_CREDIT_GUARANTEE",
+    "name_ta": "MSME கடன் உத்தரவாத திட்டம் (CGTMSE)",
+    "name_en": "Credit Guarantee Trust for MSMEs (CGTMSE)",
+    "ministry": "Ministry of MSME",
+    "level": "central",
+    "state": null,
+    "category": "loan",
+    "benefit": {
+      "kind": "loan",
+      "amount": 5000000,
+      "description_ta": "MSME கடனுக்கு 50 லட்சம் வரை பிணை இல்லா உத்தரவாதம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "18+ வயது, MSME பதிவு செய்தவர் அல்லது தொடங்க விரும்புபவர்.",
+    "documents_required": [
+      "ஆதார்",
+      "Udyam பதிவு",
+      "வணிகத் திட்டம்"
+    ],
+    "where_to_apply": "எந்த வணிக வங்கியும்",
+    "how_to_apply_steps": [
+      "வங்கியில் CGTMSE கடன் விண்ணப்பம்"
+    ],
+    "helpline": "1800-180-1111",
+    "source_url": "https://www.cgtmse.in/",
+    "priority_weight": 5,
+    "tags": [
+      "central",
+      "loan",
+      "msme",
+      "business"
+    ],
+    "last_verified_date": "2026-10-01"
+  }
+]
