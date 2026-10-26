@@ -1,9 +1,8 @@
 # Problem Statement — Thunai
 
-**Submission to:** Hack for Social Cause, VBYLD 2027 (Ministry of Youth Affairs & Sports)
-**Theme:** Digital Inclusion (primary) · Governance & Civic Technology · Elderly Care
+**Themes:** Digital Inclusion · Governance & Civic Technology · Elderly Care
 **UN SDG alignment:** 1 (No Poverty) · 5 (Gender Equality) · 10 (Reduced Inequalities) · 16 (Peace, Justice & Strong Institutions)
-**Team:** Team Thunai, Sona College of Technology, Salem, Tamil Nadu
+**Author:** Murali A · Sona College of Technology, Salem, Tamil Nadu
 
 ---
 
