@@ -1,0 +1,1285 @@
+[
+  {
+    "scheme_id": "TN_WIDOW_PENSION",
+    "name_ta": "விதவை ஓய்வூதியம் (தமிழ்நாடு)",
+    "name_en": "TN Destitute Widow Pension",
+    "ministry": "TN Social Welfare & Women Empowerment",
+    "level": "state",
+    "state": "TN",
+    "category": "pension",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 1000,
+      "description_ta": "மாதம் ரூபாய் 1000 ஓய்வூதியம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "marital_status"
+            },
+            "widow"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            72000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "விதவைகள், 18 வயதுக்கு மேல், வருடாந்திர வருமானம் 72000 க்குக் கீழ், தமிழ்நாட்டில் வசிப்பவர்.",
+    "documents_required": [
+      "ஆதார்",
+      "கணவரின் மரணச் சான்றிதழ்",
+      "வருமானச் சான்றிதழ்",
+      "குடும்ப அட்டை",
+      "வங்கிக் கணக்கு புத்தகம்"
+    ],
+    "where_to_apply": "கிராம நிர்வாக அலுவலகம் அல்லது வட்டாட்சியர் அலுவலகம்",
+    "how_to_apply_steps": [
+      "விண்ணப்பப் படிவத்தை வி.ஏ.ஓ-விடம் பெறவும்",
+      "ஆவணங்களுடன் சமர்ப்பிக்கவும்",
+      "அலுவலர் விசாரணை",
+      "30 நாட்களில் முடிவு"
+    ],
+    "helpline": "1800-425-1515",
+    "source_url": "https://cmsps.tn.gov.in/",
+    "priority_weight": 9,
+    "tags": [
+      "widow",
+      "pension",
+      "woman",
+      "elderly"
+    ]
+  },
+  {
+    "scheme_id": "TN_OLD_AGE_PENSION",
+    "name_ta": "முதியோர் ஓய்வூதியம்",
+    "name_en": "TN Old Age Pension (Destitute)",
+    "ministry": "TN Social Welfare",
+    "level": "state",
+    "state": "TN",
+    "category": "pension",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 1000
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            60
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            72000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "60 வயதுக்கு மேற்பட்ட முதியோர், வருடாந்திர வருமானம் 72000 க்குக் கீழ், தமிழ்நாட்டில் வசிப்பவர்.",
+    "documents_required": [
+      "ஆதார்",
+      "வயதுச் சான்று",
+      "வருமானச் சான்று",
+      "குடும்ப அட்டை",
+      "வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "கிராம நிர்வாக அலுவலகம் (VAO)",
+    "how_to_apply_steps": [
+      "VAO-விடம் விண்ணப்பம்",
+      "ஆவணச் சரிபார்ப்பு",
+      "அலுவலர் விசாரணை",
+      "அனுமதி"
+    ],
+    "helpline": "1800-425-1515",
+    "source_url": "https://cmsps.tn.gov.in/",
+    "priority_weight": 9,
+    "tags": [
+      "elderly",
+      "pension"
+    ]
+  },
+  {
+    "scheme_id": "TN_DISABILITY_PENSION",
+    "name_ta": "மாற்றுத்திறனாளி ஓய்வூதியம்",
+    "name_en": "TN Differently-Abled Pension",
+    "ministry": "TN Welfare of Differently Abled Persons",
+    "level": "state",
+    "state": "TN",
+    "category": "pension",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 1000
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "is_disabled"
+            },
+            true
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            5
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            72000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "40% அல்லது அதற்கு மேல் மாற்றுத்திறனாளி சான்றிதழ் உள்ளவர்கள், தமிழ்நாட்டில் வசிப்பவர்.",
+    "documents_required": [
+      "ஆதார்",
+      "மாற்றுத்திறனாளி சான்றிதழ் (UDID)",
+      "வருமானச் சான்று",
+      "வங்கி கணக்கு"
+    ],
+    "where_to_apply": "மாவட்ட மாற்றுத்திறனாளி நல அதிகாரி அலுவலகம்",
+    "how_to_apply_steps": [
+      "UDID சான்றிதழ் பெறவும்",
+      "VAO மூலம் விண்ணப்பம்",
+      "மாவட்ட அலுவலர் ஒப்புதல்"
+    ],
+    "helpline": "1800-425-1515",
+    "source_url": "https://www.tnvelfare.tn.gov.in/",
+    "priority_weight": 8,
+    "tags": [
+      "disabled",
+      "pension"
+    ]
+  },
+  {
+    "scheme_id": "TN_KALAIGNAR_MAGALIR",
+    "name_ta": "கலைஞர் மகளிர் உரிமைத் தொகை",
+    "name_en": "Kalaignar Magalir Urimai Thogai",
+    "ministry": "TN Social Welfare",
+    "level": "state",
+    "state": "TN",
+    "category": "pension",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 1000
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            21
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            250000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "21 வயதுக்கு மேற்பட்ட பெண் குடும்பத் தலைவிகள், வருடாந்திர வருமானம் 2.5 லட்சம் க்குக் கீழ்.",
+    "documents_required": [
+      "ஆதார்",
+      "குடும்ப அட்டை",
+      "வங்கிக் கணக்கு",
+      "வருமானச் சான்று"
+    ],
+    "where_to_apply": "இ-சேவை மையம் அல்லது kmut.tn.gov.in",
+    "how_to_apply_steps": [
+      "kmut.tn.gov.in-ல் ஆன்லைன் விண்ணப்பம்",
+      "ஆதார் சரிபார்ப்பு",
+      "நேரடி வங்கி பரிமாற்றம்"
+    ],
+    "helpline": "1902",
+    "source_url": "https://kmut.tn.gov.in/",
+    "priority_weight": 10,
+    "tags": [
+      "woman",
+      "flagship",
+      "income_support"
+    ]
+  },
+  {
+    "scheme_id": "TN_MATERNITY_MRMBS",
+    "name_ta": "டாக்டர் முத்துலட்சுமி ரெட்டி மகப்பேறு உதவித் திட்டம்",
+    "name_en": "Dr. Muthulakshmi Reddy Maternity Benefit Scheme",
+    "ministry": "TN Health & Family Welfare",
+    "level": "state",
+    "state": "TN",
+    "category": "maternity",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 18000,
+      "description_ta": "இரண்டு தவணைகளில் 18000 ரூபாய்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            19
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            45
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            72000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "19 முதல் 45 வயது பெண்கள், கர்ப்பிணிகள், அரசு மருத்துவமனையில் பதிவு செய்தவர்.",
+    "documents_required": [
+      "ஆதார்",
+      "கர்ப்பிணிப் பதிவு",
+      "குடும்ப அட்டை",
+      "வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "அரசு ஆரம்ப சுகாதார மையம் (PHC)",
+    "how_to_apply_steps": [
+      "PHC-ல் கர்ப்பிணி பதிவு",
+      "கர்ப்பத்தின் 3வது மாதத்தில் முதல் தவணை",
+      "குழந்தை பிறந்த பிறகு இரண்டாம் தவணை"
+    ],
+    "helpline": "104",
+    "source_url": "https://www.tnhealth.tn.gov.in/",
+    "priority_weight": 8,
+    "tags": [
+      "woman",
+      "maternity",
+      "health"
+    ]
+  },
+  {
+    "scheme_id": "TN_FREE_BUS",
+    "name_ta": "பெண்களுக்கு இலவச பேருந்து பயணம்",
+    "name_en": "Free Bus Travel for Women (TN)",
+    "ministry": "TN Transport",
+    "level": "state",
+    "state": "TN",
+    "category": "subsidy",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "அரசு நகர்ப்புற பேருந்துகளில் இலவச பயணம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "தமிழ்நாட்டில் வசிக்கும் அனைத்து பெண்களும் இலவச நகர்ப்புற பேருந்து பயணத்திற்குத் தகுதி.",
+    "documents_required": [
+      "புகைப்படம் உள்ள அரசு அடையாள அட்டை"
+    ],
+    "where_to_apply": "நேரடியாக பேருந்தில் பூஜ்ஜிய கட்டண டிக்கெட்",
+    "how_to_apply_steps": [
+      "நடத்துனரிடம் பூஜ்ஜிய கட்டண டிக்கெட் கேட்கவும்"
+    ],
+    "helpline": "1800-419-4320",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "woman",
+      "transport"
+    ]
+  },
+  {
+    "scheme_id": "TN_PUDHUMAI_PENN",
+    "name_ta": "புதுமைப் பெண் திட்டம்",
+    "name_en": "Pudhumai Penn (Moovalur Ramamirtham Higher Education Assurance)",
+    "ministry": "TN School Education",
+    "level": "state",
+    "state": "TN",
+    "category": "education",
+    "benefit": {
+      "kind": "monthly",
+      "amount": 1000,
+      "description_ta": "உயர்கல்வி முடியும் வரை மாதம் 1000 ரூபாய்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            17
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            25
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "அரசுப் பள்ளியில் 6-12 படித்து, தமிழ்நாட்டில் உயர்கல்வி பயிலும் பெண் மாணவிகள்.",
+    "documents_required": [
+      "ஆதார்",
+      "பள்ளி படிப்பு சான்று",
+      "கல்லூரி சேர்க்கை சான்று",
+      "வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "penkalvi.tn.gov.in",
+    "how_to_apply_steps": [
+      "penkalvi.tn.gov.in-ல் பதிவு",
+      "கல்லூரி சேர்க்கைக் கடிதம் பதிவேற்றம்",
+      "DBT வழியாக நேரடி பணப் பரிமாற்றம்"
+    ],
+    "helpline": "1800-425-5500",
+    "source_url": "https://penkalvi.tn.gov.in/",
+    "priority_weight": 9,
+    "tags": [
+      "woman",
+      "student",
+      "education"
+    ]
+  },
+  {
+    "scheme_id": "TN_FARMER_FREE_POWER",
+    "name_ta": "விவசாயிகளுக்கு இலவச மின்சாரம்",
+    "name_en": "Free Electricity for Farmers (TN)",
+    "ministry": "TNEB / Energy Department",
+    "level": "state",
+    "state": "TN",
+    "category": "subsidy",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "விவசாய மின் இணைப்பிற்கு இலவச மின்சாரம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "farmer"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "விவசாயத்திற்கான பம்ப்செட் இணைப்பு வைத்திருக்கும் விவசாயிகள்.",
+    "documents_required": [
+      "நில ஆவணம்",
+      "ஆதார்",
+      "TNEB சேவை எண்"
+    ],
+    "where_to_apply": "அருகிலுள்ள TNEB அலுவலகம்",
+    "how_to_apply_steps": [
+      "TNEB-ல் விவசாய இணைப்புக்கு விண்ணப்பம்",
+      "நில ஆவண சரிபார்ப்பு"
+    ],
+    "helpline": "94987-94987",
+    "source_url": "https://www.tangedco.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "farmer",
+      "subsidy"
+    ]
+  },
+  {
+    "scheme_id": "TN_FARMER_LOAN_WAIVER",
+    "name_ta": "விவசாயிகள் கூட்டுறவு கடன் தள்ளுபடி",
+    "name_en": "TN Farmer Cooperative Loan Waiver",
+    "ministry": "TN Cooperation",
+    "level": "state",
+    "state": "TN",
+    "category": "loan",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 200000,
+      "description_ta": "கூட்டுறவு வங்கிக் கடன் தள்ளுபடி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "farmer"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "land_hectares"
+            },
+            5
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "5 ஹெக்டருக்குக் கீழ் விளைநிலம் உள்ள சிறு மற்றும் குறு விவசாயிகள்.",
+    "documents_required": [
+      "பட்டா",
+      "கூட்டுறவு வங்கி கடன் விவரம்",
+      "ஆதார்"
+    ],
+    "where_to_apply": "கூட்டுறவு வங்கி கிளை",
+    "how_to_apply_steps": [
+      "கூட்டுறவு வங்கியில் விண்ணப்பம்",
+      "நில ஆவண சரிபார்ப்பு"
+    ],
+    "helpline": "044-2567-5555",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "farmer",
+      "loan",
+      "waiver"
+    ]
+  },
+  {
+    "scheme_id": "TN_UZHAVAR_PADHUKAPPU",
+    "name_ta": "உழவர் பாதுகாப்பு திட்டம்",
+    "name_en": "TN Farmer Social Security Scheme",
+    "ministry": "TN Agriculture",
+    "level": "state",
+    "state": "TN",
+    "category": "insurance",
+    "benefit": {
+      "kind": "insurance_cover",
+      "amount": 100000,
+      "description_ta": "விபத்து / மரணம் / நோய்க்கு 1 லட்சம் காப்பீடு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "farmer"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            70
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "18-70 வயது பதிவுசெய்த விவசாயிகள்.",
+    "documents_required": [
+      "பட்டா",
+      "ஆதார்",
+      "வங்கிக் கணக்கு"
+    ],
+    "where_to_apply": "விவசாயத் துறை அலுவலகம்",
+    "how_to_apply_steps": [
+      "விவசாயத் துறை அலுவலகத்தில் பதிவு"
+    ],
+    "helpline": "1800-425-1556",
+    "source_url": "https://www.tnagrisnet.tn.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "farmer",
+      "insurance"
+    ]
+  },
+  {
+    "scheme_id": "TN_AMMA_TWO_WHEELER",
+    "name_ta": "அம்மா இரு சக்கர வாகன திட்டம்",
+    "name_en": "Amma Two-Wheeler Subsidy for Working Women",
+    "ministry": "TN Social Welfare",
+    "level": "state",
+    "state": "TN",
+    "category": "subsidy",
+    "benefit": {
+      "kind": "subsidy_pct",
+      "amount": 50,
+      "description_ta": "இருசக்கர வாகன விலையில் 50% மானியம் (அதிகபட்சம் ரூ 25,000)"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            40
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            250000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "வேலை செய்யும் 18-40 வயது பெண்கள், வருடாந்திர வருமானம் 2.5 லட்சத்திற்குக் கீழ்.",
+    "documents_required": [
+      "ஆதார்",
+      "வருமானச் சான்று",
+      "வேலைச் சான்று",
+      "ஓட்டுநர் உரிமம்"
+    ],
+    "where_to_apply": "இ-சேவை மையம்",
+    "how_to_apply_steps": [
+      "இ-சேவை மையத்தில் விண்ணப்பம்",
+      "சரிபார்ப்பு",
+      "கூப்பன் வெளியீடு"
+    ],
+    "helpline": "1902",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "woman",
+      "vehicle",
+      "subsidy"
+    ]
+  },
+  {
+    "scheme_id": "TN_MARRIAGE_ASSIST",
+    "name_ta": "மூவலூர் ராமாமிர்தம் அம்மையார் திருமண உதவித் திட்டம்",
+    "name_en": "TN Marriage Assistance Scheme",
+    "ministry": "TN Social Welfare",
+    "level": "state",
+    "state": "TN",
+    "category": "grant",
+    "benefit": {
+      "kind": "onetime",
+      "amount": 50000,
+      "description_ta": "திருமணத்திற்கு 50,000 ரூபாய் + 8 கிராம் தங்கம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            35
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            72000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "18-35 வயது பெண்கள், திருமணம் செய்பவர், வருடாந்திர வருமானம் 72,000 க்குக் கீழ், அரசுப் பள்ளி படிப்பு.",
+    "documents_required": [
+      "ஆதார்",
+      "பிறப்புச் சான்று",
+      "கல்விச் சான்று",
+      "திருமண அழைப்பிதழ்",
+      "வருமானச் சான்று"
+    ],
+    "where_to_apply": "தாலுகா சமூக நல அலுவலகம்",
+    "how_to_apply_steps": [
+      "விண்ணப்பம் சமர்ப்பிக்கவும்",
+      "ஆவண சரிபார்ப்பு",
+      "திருமண நாளில் வெளியீடு"
+    ],
+    "helpline": "1800-425-1515",
+    "source_url": "https://www.tnsocialwelfare.tn.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "woman",
+      "marriage",
+      "grant"
+    ]
+  },
+  {
+    "scheme_id": "TN_FREE_SEWING_MACHINE",
+    "name_ta": "இலவச தையல் இயந்திரம்",
+    "name_en": "TN Free Sewing Machine Scheme",
+    "ministry": "TN Social Welfare",
+    "level": "state",
+    "state": "TN",
+    "category": "grant",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "இலவச தையல் இயந்திரம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "gender"
+            },
+            "F"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            20
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            60
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            72000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "20-60 வயது வறிய பெண்கள், தையல் தெரிந்தவர்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "வருமானச் சான்று",
+      "தையல் பயிற்சி சான்று"
+    ],
+    "where_to_apply": "தாலுகா சமூக நல அலுவலகம்",
+    "how_to_apply_steps": [
+      "தாலுகா அலுவலகத்தில் விண்ணப்பம்",
+      "சரிபார்ப்பு",
+      "இயந்திரம் வழங்கல்"
+    ],
+    "helpline": "1800-425-1515",
+    "source_url": "https://www.tnsocialwelfare.tn.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "woman",
+      "livelihood"
+    ]
+  },
+  {
+    "scheme_id": "TN_CMCHIS",
+    "name_ta": "முதலமைச்சர் விரிவான சுகாதார காப்பீட்டுத் திட்டம்",
+    "name_en": "Chief Minister's Comprehensive Health Insurance Scheme (CMCHIS)",
+    "ministry": "TN Health",
+    "level": "state",
+    "state": "TN",
+    "category": "insurance",
+    "benefit": {
+      "kind": "insurance_cover",
+      "amount": 500000,
+      "description_ta": "குடும்பத்திற்கு 5 லட்சம் காப்பீடு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "annual_income"
+            },
+            120000
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "வருடாந்திர வருமானம் 1.2 லட்சத்திற்குக் கீழ் உள்ள தமிழ்நாட்டுக் குடும்பங்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "குடும்ப அட்டை",
+      "வருமானச் சான்று"
+    ],
+    "where_to_apply": "அரசு / பட்டியல் தனியார் மருத்துவமனை",
+    "how_to_apply_steps": [
+      "மருத்துவமனை CMCHIS கவுண்டரில் அடையாளம்",
+      "காப்பீட்டுக் கார்டு வெளியீடு"
+    ],
+    "helpline": "1800-425-3993",
+    "source_url": "https://www.cmchistn.com/",
+    "priority_weight": 9,
+    "tags": [
+      "health",
+      "insurance",
+      "family"
+    ]
+  },
+  {
+    "scheme_id": "TN_RATION_CARD",
+    "name_ta": "குடும்ப அட்டை இலவச பொருட்கள்",
+    "name_en": "TN PDS Free Rice & Essentials",
+    "ministry": "TN Civil Supplies",
+    "level": "state",
+    "state": "TN",
+    "category": "subsidy",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "மாதம் 20 கிலோ இலவச அரிசி + பருப்பு + எண்ணெய் + சர்க்கரை"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "குடும்ப அட்டை உள்ள தமிழ்நாட்டுக் குடும்பங்கள்.",
+    "documents_required": [
+      "குடும்ப அட்டை",
+      "ஆதார்"
+    ],
+    "where_to_apply": "பொது விநியோக ரேஷன் கடை",
+    "how_to_apply_steps": [
+      "ரேஷன் கடையில் மாதந்தோறும் பெறவும்"
+    ],
+    "helpline": "1967",
+    "source_url": "https://tnpds.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "food",
+      "family"
+    ]
+  },
+  {
+    "scheme_id": "TN_LABOUR_WELFARE",
+    "name_ta": "தமிழ்நாடு தொழிலாளர் நல வாரிய பதிவு",
+    "name_en": "TN Labour Welfare Board Registration",
+    "ministry": "TN Labour & Employment",
+    "level": "state",
+    "state": "TN",
+    "category": "insurance",
+    "benefit": {
+      "kind": "insurance_cover",
+      "amount": 300000,
+      "description_ta": "மரணம், திருமணம், கல்வி, மருத்துவ உதவி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "labourer"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "கட்டுமானம், விவசாய கூலி, வீட்டுப் பணியாளர்கள் போன்ற அசாதரண தொழிலாளர்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "தொழில் சான்று",
+      "புகைப்படம்"
+    ],
+    "where_to_apply": "தொழிலாளர் நல அலுவலகம்",
+    "how_to_apply_steps": [
+      "பதிவுக் கட்டணம் 20 ரூபாய்",
+      "வருடாந்திர புதுப்பிப்பு"
+    ],
+    "helpline": "044-2855-9988",
+    "source_url": "https://labour.tn.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "labourer",
+      "welfare"
+    ]
+  },
+  {
+    "scheme_id": "TN_DIFF_ABLED_SCOOTER",
+    "name_ta": "மாற்றுத்திறனாளிகளுக்கு மோட்டார் பொருத்திய மூன்று சக்கர ஸ்கூட்டர்",
+    "name_en": "Motorized Tricycle for Differently Abled",
+    "ministry": "TN Welfare of Differently Abled Persons",
+    "level": "state",
+    "state": "TN",
+    "category": "grant",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "இலவச மோட்டார் பொருத்திய ஸ்கூட்டர்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "is_disabled"
+            },
+            true
+          ]
+        },
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            18
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "கால் இழந்த / நடக்க இயலாத மாற்றுத்திறனாளிகள், 18+ வயது.",
+    "documents_required": [
+      "UDID",
+      "ஆதார்",
+      "மருத்துவ சான்றிதழ்"
+    ],
+    "where_to_apply": "மாவட்ட மாற்றுத்திறனாளி நல அதிகாரி",
+    "how_to_apply_steps": [
+      "மாவட்ட அலுவலகத்தில் விண்ணப்பம்",
+      "மருத்துவக் குழு பரிசோதனை"
+    ],
+    "helpline": "1800-425-1515",
+    "source_url": "https://www.tnvelfare.tn.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "disabled"
+    ]
+  },
+  {
+    "scheme_id": "TN_FARMER_PANTA_SANTAI",
+    "name_ta": "உழவர் சந்தை நேரடி விற்பனை",
+    "name_en": "TN Uzhavar Sandhai (Farmer Market Access)",
+    "ministry": "TN Agricultural Marketing",
+    "level": "state",
+    "state": "TN",
+    "category": "subsidy",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "இடைத்தரகர் இன்றி நேரடி விற்பனை, இலவச இடம்"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "farmer"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "அனைத்து தமிழ்நாடு விவசாயிகளும் உழவர் சந்தையில் விற்கத் தகுதி.",
+    "documents_required": [
+      "பட்டா",
+      "ஆதார்"
+    ],
+    "where_to_apply": "மாவட்ட உழவர் சந்தை",
+    "how_to_apply_steps": [
+      "உழவர் சந்தை நிர்வாக அலுவலருடன் பதிவு"
+    ],
+    "helpline": "1551",
+    "source_url": "https://www.tnagrisnet.tn.gov.in/",
+    "priority_weight": 5,
+    "tags": [
+      "farmer",
+      "market"
+    ]
+  },
+  {
+    "scheme_id": "TN_STUDENT_FREE_LAPTOP",
+    "name_ta": "அரசு பள்ளி மாணவர்களுக்கு இலவச மடிக்கணினி",
+    "name_en": "TN Free Laptop for Govt School Students",
+    "ministry": "TN School Education",
+    "level": "state",
+    "state": "TN",
+    "category": "education",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "இலவச மடிக்கணினி + கட்டண வசதி"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            15
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            20
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "occupation"
+            },
+            "student"
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "அரசு பள்ளி 11-12 மாணவர்கள் மற்றும் முதலாம் ஆண்டு கல்லூரி மாணவர்கள்.",
+    "documents_required": [
+      "படிப்பு சான்று",
+      "ஆதார்",
+      "பள்ளித் தலைமை ஆசிரியர் சான்றிதழ்"
+    ],
+    "where_to_apply": "பள்ளி / கல்லூரி",
+    "how_to_apply_steps": [
+      "பள்ளி/கல்லூரி மூலமாக விநியோகம்"
+    ],
+    "helpline": "1800-425-5500",
+    "source_url": "https://www.tn.gov.in/",
+    "priority_weight": 6,
+    "tags": [
+      "student",
+      "education"
+    ]
+  },
+  {
+    "scheme_id": "TN_NAAN_MUDHALVAN",
+    "name_ta": "நான் முதல்வன் திட்டம்",
+    "name_en": "Naan Mudhalvan (Skill Development)",
+    "ministry": "TN Skill Development",
+    "level": "state",
+    "state": "TN",
+    "category": "education",
+    "benefit": {
+      "kind": "inkind",
+      "amount": 0,
+      "description_ta": "இலவச திறன் பயிற்சி மற்றும் வேலைவாய்ப்பு"
+    },
+    "eligibility_rule": {
+      "and": [
+        {
+          ">=": [
+            {
+              "var": "age"
+            },
+            15
+          ]
+        },
+        {
+          "<=": [
+            {
+              "var": "age"
+            },
+            29
+          ]
+        },
+        {
+          "==": [
+            {
+              "var": "state"
+            },
+            "TN"
+          ]
+        }
+      ]
+    },
+    "eligibility_plain_ta": "15-29 வயது தமிழ்நாட்டு இளைஞர்கள்.",
+    "documents_required": [
+      "ஆதார்",
+      "கல்விச் சான்று"
+    ],
+    "where_to_apply": "naanmudhalvan.tn.gov.in",
+    "how_to_apply_steps": [
+      "போர்ட்டலில் பதிவு",
+      "விருப்பப் பாடம் தேர்வு",
+      "பயிற்சி + சான்றிதழ்"
+    ],
+    "helpline": "1800-425-5500",
+    "source_url": "https://naanmudhalvan.tn.gov.in/",
+    "priority_weight": 7,
+    "tags": [
+      "youth",
+      "education",
+      "skill"
+    ]
+  }
+]

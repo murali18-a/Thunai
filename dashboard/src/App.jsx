@@ -5,6 +5,8 @@ import SchemeBrowser from './components/SchemeBrowser.jsx';
 import SessionsFeed from './components/SessionsFeed.jsx';
 import LandingPage from './pages/LandingPage.jsx';
 import SchemeDetail from './pages/SchemeDetail.jsx';
+import CallSimulator from './pages/CallSimulator.jsx';
+import ApplicationDraft from './pages/ApplicationDraft.jsx';
 
 // Lazy load the map to avoid SSR issues
 const DistrictMap = React.lazy(() => import('./components/DistrictMap.jsx'));
@@ -58,7 +60,7 @@ export default function App() {
   const subText = dark ? '#94a3b8' : '#64748b';
   const borderColor = dark ? '#334155' : '#e2e8f0';
 
-  const tabs = ['overview', 'map', 'try it', 'schemes', 'sessions'];
+  const tabs = ['overview', 'map', 'try it', 'schemes', 'sessions', 'simulator', 'draft'];
 
   return (
     <div style={{ minHeight: '100vh', background: bg, color: textColor }}>
@@ -116,6 +118,8 @@ export default function App() {
         {tab === 'try it' && <TryIt />}
         {tab === 'schemes' && <SchemeBrowser onSelect={setSelectedScheme} />}
         {tab === 'sessions' && <SessionsFeed />}
+        {tab === 'simulator' && <CallSimulator dark={dark} />}
+        {tab === 'draft' && <ApplicationDraft dark={dark} />}
       </main>
     </div>
   );
