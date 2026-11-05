@@ -51,3 +51,4 @@ field-app/
 - React Native 0.73
 - json-logic-js (same as backend)
 - No navigation library — uses simple state-based routing in App.js
+

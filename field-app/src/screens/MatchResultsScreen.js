@@ -130,3 +130,4 @@ const styles = StyleSheet.create({
   },
   newBtnText: { color: '#fff', fontSize: 15, fontWeight: '600' },
 });
+

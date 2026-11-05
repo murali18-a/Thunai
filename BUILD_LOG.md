@@ -98,10 +98,13 @@ Pages and components:
 Duration: ~330ms
 ```
 
-## File count
-- Backend: 17 source files, 3 script files, 1 test file
-- Dashboard: 8 source files (App + 4 components + 3 pages)
-- Field app: 8 source files
-- Docs: 5 markdown files
-- Config: 7 files (Docker, CI, Render, env examples)
+## File count (70 files, excluding node_modules/dist/.git)
+- Backend: 14 source files, 6 script files, 1 test file, Dockerfile, openapi.json
+- Dashboard: 10 source files (App + 4 components + 4 pages + main), Dockerfile, nginx.conf
+- Field app: 8 source files (App + 4 screens + matcher + data + schemes)
+- Docs: 3 markdown files (ARCHITECTURE, DEMO_SCRIPT, PROBLEM_STATEMENT)
+- Project root: README, BUILD_LOG, CONTRIBUTING, SECURITY, LICENSE
+- Deploy: deploy/README, docker-compose.yml, render.yaml, .env.production.example
+- CI: .github/workflows/ci.yml
+- Scheme KB guide: scheme-kb/README.md
 

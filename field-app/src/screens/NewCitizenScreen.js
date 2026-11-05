@@ -238,3 +238,4 @@ const styles = StyleSheet.create({
   submitText: { color: '#fff', fontSize: 18, fontWeight: 'bold' },
   submitSubText: { color: 'rgba(255,255,255,0.7)', fontSize: 12, marginTop: 2 },
 });
+

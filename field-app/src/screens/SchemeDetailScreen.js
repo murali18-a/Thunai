@@ -166,3 +166,4 @@ const styles = StyleSheet.create({
   },
   qrText: { fontSize: 14, color: '#78716c', textAlign: 'center', lineHeight: 22 },
 });
+
