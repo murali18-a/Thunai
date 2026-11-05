@@ -45,7 +45,7 @@ export function errorHandler(err, req, res, _next) {
  * Twilio webhook signature validation.
  * Skipped in dev/test or when TWILIO_AUTH_TOKEN is absent (mock mode).
  */
-export function twilioSignatureCheck(req, res, next) {
+export async function twilioSignatureCheck(req, res, next) {
   if (process.env.NODE_ENV === 'test' || process.env.NODE_ENV === 'development') return next();
   const token = process.env.TWILIO_AUTH_TOKEN;
   if (!token) return next();
