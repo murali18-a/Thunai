@@ -1,7 +1,7 @@
 {
   "name": "thunai",
-  "version": "1.0.0",
-  "description": "Thunai — Tamil Voice-First Scheme & Entitlement Navigator for rural TN. Submission for Hack for Social Cause, VBYLD 2027.",
+  "version": "2.0.0",
+  "description": "Thunai — Tamil Voice-First Scheme & Entitlement Navigator for rural TN.",
   "private": true,
   "workspaces": [
     "backend",
@@ -13,6 +13,6 @@
     "seed": "npm --workspace backend run seed",
     "test": "npm --workspace backend test"
   },
-  "author": "Team Thunai — Sona College of Technology",
+  "author": "Murali A",
   "license": "MIT"
 }

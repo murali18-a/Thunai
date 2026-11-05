@@ -38,10 +38,10 @@
           ┌─────────────────────────────────────────────────┐
           │               DATA LAYER                        │
           │  Mongo collections (prod)                       │
-          │   • schemes       — 50 curated TN+Central       │
+          │   • schemes       — 150 curated TN+Central      │
           │   • users         — anonymised (hash)           │
           │   • sessions      — call transcripts            │
-          │   • offices       — CSC/VAO lookups             │
+          │   • offices       — CSC/VAO lookups (60+)       │
           │   • analytics     — event stream for dashboard  │
           │  In-memory store (dev / sandbox fallback)       │
           └─────────────────────────────────────────────────┘
@@ -51,14 +51,14 @@
 
 | Decision | Why |
 | --- | --- |
-| **JsonLogic rules, no LLM, in the decision loop** | Welfare advice has legal weight. A hallucinated "yes you qualify" is a direct harm. Rules are auditable, versionable, and legally defensible. |
+| **JsonLogic rules, no LLM in the decision loop** | Welfare advice has legal weight. A hallucinated "yes you qualify" is a direct harm. Rules are auditable, versionable, and legally defensible. |
 | **DTMF-first IVR, voice fallback only for free-form slots (district, income)** | Bhashini ASR accuracy drops hard on elderly voices in noisy environments. Pressing a digit has 100% accuracy and zero latency. |
 | **Phone-number hashing (SHA-256 of last 10 digits)** | We never store raw phone numbers. The hash is enough for session continuity + de-duplication but useless for re-identification. |
-| **Scheme KB as a flat JSON file + Mongoose model** | A hackathon-week deliverable needs to be forkable by every state in the country. JSON is auditable; the schema is identical for TN, KA, OD. |
+| **Scheme KB as a flat JSON file + Mongoose model** | The project needs to be forkable by every state in the country. JSON is auditable; the schema is identical for TN, KA, OD. |
 | **Dashboard pulls from read models, not aggregating live** | Mongoose aggregations are fine at pilot scale; swap to a materialised view when district volume reaches 10k/day. |
 | **In-memory store fallback** | Lets the whole system run end-to-end for a demo without needing a Mongo install. Kept behind `isMongoConnected()` so prod code stays clean. |
-| **Bhashini (MeitY ULCA) over Google TTS** | Alignment with Digital India stack. Judges will reward this; the state will too when procuring. |
-| **Twilio / Exotel abstracted behind one service module** | Twilio is easier for the demo (free trial, international numbers). Exotel is cheaper for production India telephony. Swap by changing one file. |
+| **Bhashini (MeitY ULCA) over Google TTS** | Alignment with Digital India stack. Government departments will prefer this when procuring. |
+| **Twilio / Exotel abstracted behind one service module** | Twilio is easier for dev (free trial, international numbers). Exotel is cheaper for production India telephony. Swap by changing one file. |
 
 ## Dataflow — one IVR call
 
@@ -87,8 +87,8 @@ Caller presses "9" → endSession() → save transcript + analytics
 
 ## Deployment path
 
-**Hackathon demo:**
-Twilio trial number · Node backend on a laptop + ngrok · Dashboard on `localhost:5173` · In-memory store.
+**Local development:**
+Twilio trial number · Node backend on localhost + ngrok · Dashboard on `localhost:5173` · In-memory store.
 
 **TN pilot (phase 1):**
 Exotel inbound DID (~₹600/mo) · Node backend on a ₹500/mo DigitalOcean droplet · MongoDB Atlas free tier · Dashboard on Vercel · Bhashini production credentials (requires MeitY onboarding, ~2 weeks).
@@ -127,24 +127,27 @@ backend/
 │   │   └── hash.js      — phone number hashing
 │   └── server.js
 ├── scripts/
-│   ├── schemes.json     — 50-scheme KB (the project's moat)
-│   ├── offices.json     — CSC/VAO seed
+│   ├── schemes.json     — 150-scheme KB (the project's moat)
+│   ├── schemes-additional.json — additional schemes
+│   ├── offices.json     — CSC/VAO seed (60+ offices, 38 districts)
+│   ├── validate-kb.js   — KB validation script
 │   └── seed.js
 └── tests/
-    └── engine.test.js   — 14 tests covering parser + 5 personas
+    └── engine.test.js   — 46 tests covering parser + personas + routes
 
 dashboard/
 └── src/
     ├── App.jsx
+    ├── pages/
+    │   └── LandingPage.jsx  — public landing page
     └── components/
-        ├── TryIt.jsx       — pick a persona, see matches
+        ├── TryIt.jsx         — pick a persona, see matches
         ├── SchemeBrowser.jsx — browse KB
-        └── SessionsFeed.jsx  — live call transcripts
+        ├── SessionsFeed.jsx  — live call transcripts
+        └── DistrictMap.jsx   — TN district demand heatmap
 
 docs/
 ├── PROBLEM_STATEMENT.md
-├── DECK_OUTLINE.md
 ├── DEMO_SCRIPT.md
-├── ARCHITECTURE.md
-└── TEAM_SELF_DECLARATION.md
+└── ARCHITECTURE.md
 ```

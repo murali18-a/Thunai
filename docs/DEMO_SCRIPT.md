@@ -1,13 +1,13 @@
-# Demo Video Script (3:30 — target length)
+# Thunai — Demo Script (~3:30)
 
-**Format:** 1080p, landscape, voiceover in Tamil + English captions.
+**Format:** 1080p landscape, voiceover in Tamil + English captions.
 **Equipment:** 2 phones (one for the Thunai call, one filming), 1 laptop for dashboard, lav mic, phone tripod.
 
 ---
 
-## 0:00 — 0:25  Open on the problem (voiceover + b-roll)
+## 0:00 — 0:25  The problem (voiceover + b-roll)
 
-**Visuals:** 3-4 shots of rural TN — a village street, an elderly woman at her
+**Visuals:** 3–4 shots of rural TN — a village street, an elderly woman at her
 doorstep (actor, consented), a VAO office with a long queue, a WhatsApp screen
 in English.
 
@@ -23,15 +23,15 @@ in English.
 
 ---
 
-## 0:25 — 0:45  Team intro
+## 0:25 — 0:45  Introducing Thunai
 
-**Visual:** Three faces, name chyron under each.
+**Visual:** Project logo / title card.
 
-> "நாங்கள் Team Thunai. சோனா பொறியியல் கல்லூரி மாணவர்கள். தமிழ்நாடு, சேலம்.
-> இன்று நாங்கள் 'துணை' என்ற எங்கள் தீர்வை உங்களுக்கு அறிமுகம் செய்கிறோம்."
+> "துணை என்பது ஒரு தமிழ் குரல்-முதல் அரசுத் திட்ட வழிகாட்டி.
+> எந்த AI மாயாஜாலமும் இல்லை — ஒவ்வொரு பதிலும் அரசு ஆவணத்திலிருந்து வருகிறது."
 >
-> *(We are Team Thunai, students at Sona College of Technology, Salem.
-> Today we are introducing Thunai — our solution.)*
+> *(Thunai is a Tamil voice-first government scheme navigator.
+> No AI hallucinations — every answer traces back to an official government document.)*
 
 ---
 
@@ -60,31 +60,30 @@ Press 1 for details. System reads documents and VAO location. Hang up.
 ## 2:30 — 3:00  The brain (dashboard cut)
 
 **Visual:** Switch to laptop screen recording — show the admin dashboard.
-Scroll to the Overview tab. KPIs. Scroll to Scheme Browser — show 50 cards.
+Scroll to the Overview tab. KPIs. Scroll to Scheme Browser — show 150 cards.
 Scroll to Sessions Feed — show the call that just happened appear live.
 
 **Voiceover:**
-> "ஒரு எல்எல்எம் இல்லை. ஒவ்வொரு பதிலும் ஒரு அரசு ஆவணத்திலிருந்து வருகிறது.
-> 50 திட்டங்கள். 32 மாவட்டங்கள். இரு மொழிகள்."
+> "எந்த LLM-ம் இல்லை. ஒவ்வொரு பதிலும் ஒரு அரசு ஆவணத்திலிருந்து வருகிறது.
+> 150 திட்டங்கள். 38 மாவட்டங்கள். இரு மொழிகள்."
 >
 > *(No LLM. Every answer traces back to an official government document.
-> 50 schemes. 32 districts. Two languages.)*
+> 150 schemes. 38 districts. Two languages.)*
 
 ---
 
-## 3:00 — 3:30  The ask
+## 3:00 — 3:30  The vision
 
-**Visual:** Final team-photo frame with the project name, dial-in number, GitHub link, and the four MY Bharat logos (MoYAS, MeitY, IIT Bombay, Digital India).
+**Visual:** Final frame with project name, dial-in number, GitHub link.
 
 **Voiceover:**
 > "துணை ஒரு பொருள் அல்ல — ஒரு வார்ப்புரு.
-> தமிழ்நாடு இன்று; நாளை ஒவ்வொரு மாநிலமும்.
-> VBYLD 2027 இல் சந்திப்போம்."
+> தமிழ்நாடு இன்று; நாளை ஒவ்வொரு மாநிலமும்."
 >
-> *(Thunai isn't a product — it's a template. Tamil Nadu today, every state tomorrow. See you at VBYLD 2027.)*
+> *(Thunai isn't a product — it's a template. Tamil Nadu today, every state tomorrow.)*
 
 **End card holds for 3 seconds:**
 - `துணை · Thunai`
 - Call: `<number>`
-- GitHub: `github.com/<org>/thunai`
-- Team Thunai · Sona College of Technology
+- GitHub: `github.com/murali18-a/Thunai`
+- Built by Murali A

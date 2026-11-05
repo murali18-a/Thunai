@@ -109,12 +109,12 @@ Three channels, one brain:
   matches.
 - **Phase 3 (9–18 months):** Replication to Karnataka, Kerala, Andhra Pradesh,
   Telangana (Dravidian-language core); scheme KB crowdsourced via college
-  youth volunteer networks under the MY Bharat platform.
+  youth volunteer networks and college NSS units.
 
 **North-star metric:** *Rupees of entitlement unlocked for people who would
 otherwise never have claimed them.*
 
-## Alignment with "Think Global, Hack Local"
+## Global problem, local solution
 
 - **Global:** The problem of welfare under-utilisation is universal. The World
   Bank estimates 2+ billion people worldwide miss social-protection

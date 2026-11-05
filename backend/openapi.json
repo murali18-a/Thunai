@@ -4,7 +4,7 @@
     "title": "Thunai API",
     "description": "Tamil voice-first scheme & entitlement navigator for rural Tamil Nadu. Zero-LLM, deterministic JsonLogic rule engine.",
     "version": "2.0.0",
-    "contact": { "name": "Team Thunai", "url": "https://github.com/thunai" },
+    "contact": { "name": "Murali A", "url": "https://github.com/murali18-a/Thunai" },
     "license": { "name": "MIT" }
   },
   "servers": [
