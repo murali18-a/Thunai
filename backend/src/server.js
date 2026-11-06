@@ -1,12 +1,19 @@
 import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
+import { existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, join } from 'node:path';
 import { config } from './config/index.js';
 import { logger } from './utils/logger.js';
 import { ivrRouter } from './routes/ivr.js';
 import { waRouter } from './routes/whatsapp.js';
 import { apiRouter } from './routes/api.js';
 import { apiLimiter, webhookLimiter, errorHandler, setupDocs } from './middleware/index.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const distPath = join(__dirname, '..', '..', 'dashboard', 'dist');
 
 async function connectDb() {
   try {
@@ -36,6 +43,7 @@ async function connectDb() {
 
 async function start() {
   const app = express();
+  app.set('trust proxy', 1);
 
   // ── CORS ────────────────────────────────────────────────────────────────────
   app.use(cors({ origin: config.dashboardOrigin, credentials: true }));
@@ -57,28 +65,37 @@ async function start() {
   // ── OpenAPI spec + Swagger UI ───────────────────────────────────────────────
   setupDocs(app);
 
-  // ── Root — identity ─────────────────────────────────────────────────────────
-  app.get('/', (_req, res) => res.json({
-    service: 'Thunai',
-    version: '2.0.0',
-    description: 'Tamil voice-first scheme navigator for rural TN',
-    endpoints: {
-      health: 'GET /api/health',
-      schemes: 'GET /api/schemes',
-      match: 'POST /api/match',
-      eligibility_explain: 'POST /api/eligibility/explain',
-      application_draft: 'POST /api/application/draft',
-      sms_summary: 'POST /api/sms/send-summary',
-      nearest_office: 'GET /api/nearest-office',
-      public_stats: 'GET /api/stats/public',
-      ivr_voice: '/ivr/voice',
-      ivr_simulate: 'POST /ivr/voice/simulate',
-      whatsapp_inbound: '/whatsapp/inbound',
-      whatsapp_simulate: 'POST /whatsapp/simulate',
-      openapi: 'GET /api/openapi.json',
-      docs: 'GET /api/docs',
-    },
-  }));
+  // ── Serve Dashboard if built ───────────────────────────────────────────────
+  if (existsSync(distPath)) {
+    app.use(express.static(distPath));
+    app.get('*', (req, res, next) => {
+      if (req.path.startsWith('/api') || req.path.startsWith('/ivr') || req.path.startsWith('/whatsapp')) return next();
+      res.sendFile(join(distPath, 'index.html'));
+    });
+  } else {
+    // ── Root — identity ─────────────────────────────────────────────────────────
+    app.get('/', (_req, res) => res.json({
+      service: 'Thunai',
+      version: '2.0.0',
+      description: 'Tamil voice-first scheme navigator for rural TN',
+      endpoints: {
+        health: 'GET /api/health',
+        schemes: 'GET /api/schemes',
+        match: 'POST /api/match',
+        eligibility_explain: 'POST /api/eligibility/explain',
+        application_draft: 'POST /api/application/draft',
+        sms_summary: 'POST /api/sms/send-summary',
+        nearest_office: 'GET /api/nearest-office',
+        public_stats: 'GET /api/stats/public',
+        ivr_voice: '/ivr/voice',
+        ivr_simulate: 'POST /ivr/voice/simulate',
+        whatsapp_inbound: '/whatsapp/inbound',
+        whatsapp_simulate: 'POST /whatsapp/simulate',
+        openapi: 'GET /api/openapi.json',
+        docs: 'GET /api/docs',
+      },
+    }));
+  }
 
   // ── Global error handler (MUST be last) ─────────────────────────────────────
   app.use(errorHandler);

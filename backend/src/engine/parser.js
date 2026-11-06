@@ -112,7 +112,9 @@ export function parseOccupation(text) {
 }
 
 export function parseIncome(text) {
-  const t = normalizeDigits(text.toLowerCase());
+  const t = normalizeDigits(text.toLowerCase().trim());
+  if (/^(0|பூஜ்ஜியம்|zero|nil|none)$/i.test(t)) return 0;
+  if (hasAny(text, ['no income', 'poor', 'zero', 'nil'], ['கூலி இல்லை', 'வருமானம் இல்லை', 'வருமானம் இல்ல', 'ஏழை', 'பூஜ்ஜியம்'])) return 0;
   // "monthly 5000", "year 60000", "5000 ரூபாய்"
   const monthly = t.match(/(?:monthly|per month|மாதம்)\s*(?:ரூபாய்\s*)?(\d+)/);
   if (monthly) return parseInt(monthly[1], 10) * 12;
@@ -120,7 +122,12 @@ export function parseIncome(text) {
   if (yearly) return parseInt(yearly[1], 10);
   const bare = t.match(/(\d{3,7})\s*(?:ரூபாய்|rupees?|rs\.?)/);
   if (bare) return parseInt(bare[1], 10) * 12; // assume monthly if unlabelled
-  if (hasAny(text, ['no income', 'poor'], ['கூலி இல்லை', 'வருமானம் இல்லை', 'ஏழை'])) return 0;
+  const pureDigits = t.match(/^\d+$/);
+  if (pureDigits) {
+    const val = parseInt(pureDigits[0], 10);
+    if (val === 0) return 0;
+    return val <= 50000 ? val * 12 : val;
+  }
   return null;
 }
 
