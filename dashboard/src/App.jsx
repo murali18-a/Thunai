@@ -42,7 +42,13 @@ export default function App() {
 
   // Landing page
   if (view === 'landing') {
-    return <LandingPage onTryIt={() => { setView('admin'); setTab('try it'); }} />;
+    return (
+      <LandingPage
+        onTryIt={() => { setView('admin'); setTab('try it'); }}
+        onCall={() => { setView('admin'); setTab('simulator'); }}
+        onAdmin={() => { setView('admin'); setTab('overview'); }}
+      />
+    );
   }
 
   // Scheme detail view

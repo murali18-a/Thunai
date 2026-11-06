@@ -6,7 +6,7 @@ const API = '/api';
  * Public landing page for Thunai — this is what visitors see at "/"
  * Features: animated counters, dial-in CTA, "try it" button, scheme search, dark hero.
  */
-export default function LandingPage({ onTryIt }) {
+export default function LandingPage({ onTryIt, onCall, onAdmin }) {
   const [stats, setStats] = useState(null);
 
   useEffect(() => {
@@ -14,11 +14,43 @@ export default function LandingPage({ onTryIt }) {
   }, []);
 
   return (
-    <div style={{ fontFamily: "'Inter', 'Segoe UI', sans-serif" }}>
+    <div style={{ fontFamily: "'Inter', 'Noto Sans Tamil', system-ui, sans-serif" }}>
+      {/* ── Top Navbar ──────────────────────────────────────────────────────── */}
+      <header style={{
+        background: '#0b1120', borderBottom: '1px solid rgba(255,255,255,0.08)',
+        padding: '14px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+        flexWrap: 'wrap', gap: 12,
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <span style={{ fontSize: 24, fontWeight: 800, color: '#f97316' }}>துணை</span>
+          <span style={{ fontSize: 14, color: '#94a3b8', fontWeight: 500 }}>Thunai v2.0</span>
+        </div>
+        <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+          <button onClick={onCall} style={{
+            background: '#f97316', color: '#fff', border: 'none', padding: '8px 16px',
+            borderRadius: 8, fontSize: 13, fontWeight: 700, cursor: 'pointer',
+          }}>
+            📞 Voice Simulator
+          </button>
+          <button onClick={onTryIt} style={{
+            background: 'rgba(255,255,255,0.08)', color: '#fff', border: '1px solid rgba(255,255,255,0.15)',
+            padding: '8px 16px', borderRadius: 8, fontSize: 13, fontWeight: 600, cursor: 'pointer',
+          }}>
+            🧪 Try Online
+          </button>
+          <button onClick={onAdmin} style={{
+            background: 'rgba(255,255,255,0.08)', color: '#fff', border: '1px solid rgba(255,255,255,0.15)',
+            padding: '8px 16px', borderRadius: 8, fontSize: 13, fontWeight: 600, cursor: 'pointer',
+          }}>
+            📊 Dashboard
+          </button>
+        </div>
+      </header>
+
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
       <section style={{
         background: 'linear-gradient(135deg, #0b1120 0%, #1e293b 50%, #0f172a 100%)',
-        color: '#fff', padding: '80px 24px 60px', textAlign: 'center',
+        color: '#fff', padding: '70px 24px 50px', textAlign: 'center',
         position: 'relative', overflow: 'hidden',
       }}>
         <div style={{
@@ -32,26 +64,36 @@ export default function LandingPage({ onTryIt }) {
             Thunai — Your Rights, Your Voice
           </span>
         </h1>
-        <p style={{ maxWidth: 600, margin: '24px auto', opacity: 0.85, fontSize: 18, lineHeight: 1.6 }}>
-          Tamil Nadu's first voice-first scheme navigator. Dial in from any phone, speak in Tamil,
-          and discover government schemes you're eligible for — no app, no internet, no literacy required.
+        <p style={{ maxWidth: 640, margin: '24px auto', opacity: 0.88, fontSize: 17, lineHeight: 1.6 }}>
+          Tamil Nadu's first voice-first scheme navigator. Dial in from your browser, speak in Tamil or use the keypad,
+          and discover government schemes you're eligible for — no app, no phone carrier fees.
         </p>
-        <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap', marginTop: 32 }}>
-          <a href="tel:+911234567890" style={{
+        <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap', marginTop: 32 }}>
+          <button onClick={onCall} style={{
             background: '#f97316', color: '#fff', padding: '16px 32px', borderRadius: 12,
-            fontSize: 18, fontWeight: 700, textDecoration: 'none',
+            fontSize: 18, fontWeight: 700, border: 'none', cursor: 'pointer',
             boxShadow: '0 4px 24px rgba(249,115,22,0.4)', transition: 'transform 0.2s',
           }}>
-            📞 டயல் செய்யுங்கள்
-          </a>
+            📞 நேரலை அழைப்பு (Voice Call)
+          </button>
           <button onClick={onTryIt} style={{
-            background: 'rgba(255,255,255,0.1)', color: '#fff', padding: '16px 32px',
-            borderRadius: 12, fontSize: 18, fontWeight: 600, border: '1px solid rgba(255,255,255,0.2)',
+            background: 'rgba(255,255,255,0.1)', color: '#fff', padding: '16px 28px',
+            borderRadius: 12, fontSize: 17, fontWeight: 600, border: '1px solid rgba(255,255,255,0.2)',
             cursor: 'pointer', backdropFilter: 'blur(10px)',
           }}>
-            🧪 Try It Online
+            🧪 Form Matcher
+          </button>
+          <button onClick={onAdmin} style={{
+            background: 'rgba(255,255,255,0.06)', color: '#fff', padding: '16px 24px',
+            borderRadius: 12, fontSize: 17, fontWeight: 600, border: '1px solid rgba(255,255,255,0.15)',
+            cursor: 'pointer',
+          }}>
+            📊 Dashboard
           </button>
         </div>
+        <p style={{ marginTop: 20, fontSize: 13, opacity: 0.75, color: '#fed7aa' }}>
+          🔊 நேரடி உலாவி அழைப்பு (Browser Voice Call) — தமிழ் குரல் & விசைப்பலகை (Keypad) வசதி கொண்டது
+        </p>
       </section>
 
       {/* ── Counters ──────────────────────────────────────────────────────── */}
